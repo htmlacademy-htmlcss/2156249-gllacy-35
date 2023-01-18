@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
+
   <body>
     <header class="header">
       <a class="logo__link" href="index.html">
-        <img class="logo" src="" width="" height=""
-          alt="Логотип магазина Глейси.">
+        <img class="logo" src="" width="" height="" alt="Логотип магазина Глейси.">
       </a>
 
       <nav class="navigation">
@@ -55,7 +56,254 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main__index">
+      <h1 class="visually-hidden">Магазин Глейси</h1>
+
+      <section class="slider">
+        <h2 class="visually-hidden">Галерея товаров в виде слайдера</h2>
+
+        <h3 class="slider__title">Нежный пломбир
+          с клубничным джемом</h3>
+        <p class="slider__text">Натуральное мороженое из свежих сливок
+          и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+
+        <button class="button slider__button" type="button">Заказать</button>
+
+        <ul class="slider__pagination__list">
+          <li class="slider__pagination__item">
+            <button class="button slider__pagination__button slider__pagination__button__current" type="button">
+              <span class="visually-hidden">1 фото</span>
+            </button>
+          </li>
+          <li class="slider__pagination__item">
+            <button class="button slider__pagination__button" type="button">
+              <span class="visually-hidden">2 фото</span>
+            </button>
+          </li>
+          <li class="slider__pagination__item">
+            <button class="button slider__pagination__button" type="button">
+              <span class="visually-hidden">3 фото</span>
+            </button>
+          </li>
+        </ul>
+
+        <ul class="slideshow__list">
+          <li class="slideshow__item">
+            <a class="slideshow__link" href="">
+              <img class="slideshow__image" src="" width="" height="" alt="">
+            </a>
+          </li>
+          <li class="slideshow__item">
+            <a class="slideshow__link" href="">
+              <img class="slideshow__image" src="" width="" height="" alt="">
+            </a>
+          </li>
+          <li class="slideshow__item">
+            <a class="slideshow__link" href="">
+              <img class="slideshow__image" src="" width="" height="" alt="">
+            </a>
+          </li>
+        </ul>
+
+        <button class="button slideshow__button slideshow__button__prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="button slideshow__button slideshow__button__next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
+
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">
+                Телеграмм
+              </span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">
+                Вконтакте
+              </span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">
+                YouTube
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="banners">
+        <h2 class="visually-hidden">Баннеры с актуальными предложениями и акциями</h2>
+
+        <p class="banners__slogan">
+          Заказывайте мороженое и получайте подарки!
+        </p>
+
+        <ul class="banners__list">
+          <li class="banners__item">
+            <h3 class="banners__title">
+              Малинка даром!
+            </h3>
+            <p class="banners__text">
+              При покупке 2 кг любого фруктового
+              мороженого добавим в ваш заказ банку
+              малинового варенья бесплатно.
+            </p>
+            <img class="banners__image" src="" width="" height="" alt="">
+
+            <button class="button banners__button" type="button">
+              Хочу подарок
+            </button>
+          </li>
+          <li class="banners__item">
+            <h3 class="banners__title">
+              Маршмеллоу даром!
+            </h3>
+            <p class="banners__text">
+              При покупке 2 кг пломбира добавим
+              в ваш заказ упаковку нежных
+              зефирок совершенно бесплатно.
+            </p>
+            <img class="banners__image" src="" width="" height="" alt="">
+
+            <button class="button banners__button" type="button">
+              Хочу подарок
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="categories">
+        <h2 class="visually-hidden">Виды мороженного в магазине Глейси</h2>
+
+        <p class="categories__slogan">
+          Попробуйте самые популярные вкусы нашего мороженого
+        </p>
+
+        <ul class="categories__list">
+          <li class="categories__item">
+            <img class="categories__image" src="" width="" height="" alt="">
+            <h3 class="categories__title">Малинка</h3>
+            <p class="categories__text">
+              Сливочное мороженое с малиновым джемом
+            </p>
+            <span class="categories__price">310 ₽/кг</span>
+
+            <button class="button categories__button" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+          <li class="categories__item">
+            <img class="categories__image" src="" width="" height="" alt="">
+            <h3 class="categories__title">Фисташка</h3>
+            <p class="categories__text">
+              Фисташковый пломбир с кусочками шоколада
+            </p>
+            <span class="categories__price">340 ₽/кг</span>
+
+            <button class="button categories__button" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+          <li class="categories__item">
+            <img class="categories__image" src="" width="" height="" alt="">
+            <h3 class="categories__title">Черника</h3>
+            <p class="categories__text">
+              Крем-брюле с черничным джемом
+            </p>
+            <span class="categories__price">330 ₽/кг</span>
+
+            <button class="button categories__button" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+          <li class="categories__item">
+            <img class="categories__image" src="" width="" height="" alt="">
+            <h3 class="categories__title">Бабл-гам</h3>
+            <p class="categories__text">
+              Ванильный пломбир со сладкой посыпкой
+            </p>
+            <span class="categories__price">320 ₽/кг</span>
+
+            <button class="button categories__button" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="profile">
+        <h2 class="visually-hidden">Основная информация о магазине Глейси</h2>
+
+        <p class="profile__text__main">
+          Магазин Глейси – это онлайн и офлайн-магазин по продаже
+          мороженого собственного производства на развес
+        </p>
+
+        <ul class="profile__list">
+          <li class="profile__item">
+            <p class="profile__text__minor">
+              Всё наше мороженое изготавливается на собственном
+              производстве с использованием современного
+              оборудования и проверенных временем технологий.
+            </p>
+          </li>
+          <li class="profile__item">
+            <p class="profile__text__minor">
+              Закупка ингредиентов производится только
+              у проверенных фермерских хозяйств, с которыми
+              нас связывает долговременное сотрудничество.
+            </p>
+          </li>
+          <li class="profile__item">
+            <p class="profile__text__minor">
+              Для приготовления мороженого используются сливки
+              и молоко высочайшего качества. Все ингредиенты
+              и добавки произведены из натурального сырья.
+            </p>
+          </li>
+          <li class="profile__item">
+            <p class="profile__text__minor">
+              Доставка нашего мороженого осуществляется в
+              специальном термопаке, который не даёт мороженому
+              растаять и позволяет сохранить превосходный вкус.
+            </p>
+          </li>
+        </ul>
+
+      </section>
+
+      <section class="blog">
+        <h2 class="visually-hidden">Блог магазина Глейси</h2>
+
+        <span class="blog__new">Новое в нашем блоге</span>
+        <h3 class="blog__title">10 способов сервировки
+          фруктовых щербетов
+          к столу
+        </h3>
+      </section>
+
+      <section class="subsciption">
+        <h2 class="visually-hidden">Форма подписки на рассылку от магазина Глейси</h2>
+
+        <p class="subsciption__text">
+          Подпишитесь на нашу сладкую рассылку и будьте всегда
+          в курсе всего самого вкусного, что у нас происходит. Обещаем
+          не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
+
+        <form class="subsciption__form">
+          <input class="subscription__field" placeholder="email@example.com" type="email">
+          <button class="button subscription__button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </section>
 
     </main>
 
@@ -130,4 +378,5 @@
       </section>
     </footer>
   </body>
+
 </html>
