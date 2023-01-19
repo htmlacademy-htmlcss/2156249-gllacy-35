@@ -297,7 +297,7 @@
           не спамить и не слать всякой ненужной ерунды. Честно =)
         </p>
 
-        <form class="subsciption__form">
+        <form class="subsciption__form" action="https://echo.htmlacademy.ru/" method="get">
           <input class="subscription__field" placeholder="email@example.com" type="email">
           <button class="button subscription__button" type="submit">
             Отправить
@@ -305,6 +305,69 @@
         </form>
       </section>
 
+      <section class="delivery">
+        <h2 class="visually-hidden">Заказ доставки из магазина Глейси</h2>
+
+        <h3 class="delivery__title">
+          Доставка любимого мороженого на дом
+        </h3>
+        <p class="delivery__text">
+          Хочется полакомиться любимым десертом,
+          но нет времени съездить в магазин? Закажите
+          доставку мороженого на дом, и курьер
+          привезёт вам ваш заказ в течение часа!
+        </p>
+
+        <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="get">
+          <p class="delivery__form__text">
+            Укажите адрес и дату доставки, и мы свяжемся
+            с вами, чтобы подтвердить заказ.
+          </p>
+
+          <label class="control">
+            <input class="control__input" type="date" name="date" placeholder="01.04.2020">
+            Время
+          </label>
+
+          <label class="control">
+            <input class="control__input" type="tel" name="phone" placeholder="+7 800 999-00-00">
+            Телефон
+          </label>
+
+          <label class="control">
+            <input class="control__input" type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8">
+            Адрес
+          </label>
+
+          <button class="button delivery__button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </section>
+
+      <section class="address">
+        <p class="address__text__minor">
+          Адрес главного офиса и офлайн-магазина:
+        </p>
+        <p class="address__text">
+          наб. реки Карповки,
+          5 лит П, Санкт-Петербург
+        </p>
+
+        <p class="address__text__minor">
+          Для заказов по телефону:
+        </p>
+        <a class="address__phone__link" href="tel:+78128121212">
+          +7 (812) 812-12-12
+        </a>
+        <p class="address__text__minor__extra">
+          (с 10 до 20 ежедневно)
+        </p>
+
+        <a class="address__link button" href="">
+          Форма обратной связи
+        </a>
+      </section>
     </main>
 
     <footer class="footer">
