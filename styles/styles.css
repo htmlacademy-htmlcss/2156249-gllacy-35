@@ -61,6 +61,23 @@ body {
 .header {
   color: #2D3440;
   line-height: 20px;
+
+  width: 1170px;
+  margin: 0 auto;
+
+  display: flex;
+
+  padding: 24px 0;
+}
+
+.logo__link {
+  display: block;
+  margin: 0;
+  margin-right: 16px;
+}
+
+.navigation {
+  display: flex;
 }
 
 .navigation__list {
@@ -68,11 +85,16 @@ body {
 
   padding: 0;
   margin: 0;
+  margin-right: 164px;
+
+  display: flex;
 }
 
 .navigation__link {
   text-decoration: none;
   color: inherit;
+
+  padding: 8px 16px;
 }
 
 .phone__link {
@@ -81,11 +103,25 @@ body {
   font-weight: 700;
 }
 
+.navigation__list__rightside {
+  margin: 0;
+}
+
 .navigation__link__rightside {
   font-size: 14px;
 }
 
 /* Основная часть */
+
+.main__index {
+  width: 1170px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+
+}
 
 /* Слайдер */
 
@@ -200,6 +236,11 @@ body {
   }
 
   /* Подвал */
+
+  .footer {
+    width: 1170px;
+    margin: 0 auto;
+  }
 
   /* Дополнительная информация */
 
