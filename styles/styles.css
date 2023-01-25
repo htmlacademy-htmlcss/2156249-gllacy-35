@@ -22,6 +22,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -29,7 +33,16 @@ body {
   line-height: 22px;
 
   background-color: #feafc3;
-  color: #000000;
+  color: #565C66;
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main__container {
+  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -42,3 +55,270 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* Шапка */
+
+.header {
+  color: #2D3440;
+  line-height: 20px;
+}
+
+.navigation__list {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.phone__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+.navigation__link__rightside {
+  font-size: 14px;
+}
+
+/* Основная часть */
+
+/* Слайдер */
+
+.slider__title {
+  color: #2D3440;
+
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.slider__text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Баннеры */
+
+.banners__slogan {
+  color: #2D3440;
+
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.banners__title {
+  color: #2D3440;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.banners__text {
+  color: #2D3440;
+}
+
+/* Категории */
+
+.categories__slogan {
+  color: #2D3440;
+
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.categories__title {
+  color: #2D3440;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.categories__price {
+  color: #2D3440;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* О магазине */
+
+.profile__text__main {
+  color: #2D3440;
+
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+  /* Блог */
+
+  .blog__new {
+    line-height: 20px;
+  }
+
+  .blog__title {
+    color: #2D3440;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  /* Доставка */
+
+  .delivery__title {
+    color: #2D3440;
+
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+  }
+
+  /* Адрес */
+
+  .address__text {
+    color: #2D3440;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .address__text__minor__extra {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* Подвал */
+
+  /* Дополнительная информация */
+
+  .extra-information__list {
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .extra-information__link {
+    text-decoration: none;
+
+    color: #2D3440;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .extra-information__link__current {
+    font-weight: 700;
+  }
+
+  /* Копирайт */
+
+  .copyright__text {
+    color: #2D3440;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .copyright__link__small {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+
+
+  /* Страница каталога */
+
+  /* Хлебные крошки */
+
+  .breadcrumbs__title {
+    color: #2D3440;
+
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+  }
+
+  .breadcrumbs__list {
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .breadcrumbs__link {
+    text-decoration: none;
+    color: #2D3440;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .breadcrumbs__link__current {
+    text-decoration: underline;
+  }
+
+  /* Фильтер */
+
+  .filter__group__title {
+    color: #2D3440;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* Результаты поиска */
+
+  .catalog__list {
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .catalog__title {
+    color: #2D3440;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .catalog__price {
+    color: #2D3440;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* Пагинация */
+
+  .pagination__list {
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .pagination__link {
+    text-decoration: none;
+    color: #2D3440;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
