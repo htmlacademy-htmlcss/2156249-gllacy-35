@@ -17,12 +17,9 @@
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="">
+            <a class="navigation__link navigation__link__catalog" href="">
               Каталог
             </a>
-            <button class="button header__catalog-button" type="button">
-              <span class="visually-hidden">Открыть</span>
-            </button>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="">
@@ -36,9 +33,12 @@
           </li>
         </ul>
 
-        <a class="phone__link" href="tel:+78005558628">Тел.:+7 800 555-86-28</a>
-
         <ul class="navigation__list navigation__list__rightside">
+          <li class="navigation__item">
+            <a class="navigation__link phone__link" href="tel:+78005558628">
+              Тел.:+7 800 555-86-28
+            </a>
+          </li>
           <li class="navigation__item">
             <a class="navigation__link navigation__link__rightside" href="">
               <span class="visually-hidden">Поиск</span>
@@ -65,11 +65,11 @@
       <section class="slider">
         <h2 class="visually-hidden">Галерея товаров в виде слайдера</h2>
 
+        <div class="slider__information__wrapper">
         <h3 class="slider__title">Нежный пломбир
           с клубничным джемом</h3>
         <p class="slider__text">Натуральное мороженое из свежих сливок
           и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-
         <button class="button slider__button" type="button">Заказать</button>
 
         <ul class="slider__pagination__list">
@@ -89,7 +89,9 @@
             </button>
           </li>
         </ul>
+        </div>
 
+        <div class="slider__pictures__wrapper">
         <ul class="slideshow__list">
           <li class="slideshow__item">
             <a class="slideshow__link" href="">
@@ -141,14 +143,15 @@
             </a>
           </li>
         </ul>
+        </div>
       </section>
 
       <section class="banners">
         <h2 class="visually-hidden">Баннеры с актуальными предложениями и акциями</h2>
 
-        <p class="banners__slogan">
-          Заказывайте мороженое и получайте подарки!
-        </p>
+        <h3 class="banners__slogan">
+          Заказывайте мороженое <br> и получайте подарки!
+        </h3>
 
         <ul class="banners__list">
           <li class="banners__item">

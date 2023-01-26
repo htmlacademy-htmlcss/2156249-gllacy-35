@@ -72,12 +72,19 @@ body {
 
 .logo__link {
   display: block;
+
+  width: 137px;
+  height: 56px;
   margin: 0;
-  margin-right: 16px;
 }
 
 .navigation {
   display: flex;
+
+  margin-left: 16px;
+  width: 1017px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation__list {
@@ -85,7 +92,6 @@ body {
 
   padding: 0;
   margin: 0;
-  margin-right: 164px;
 
   display: flex;
 }
@@ -93,14 +99,18 @@ body {
 .navigation__link {
   text-decoration: none;
   color: inherit;
-
   padding: 8px 16px;
+}
+
+.navigation__link__catalog {
+  padding-right: 38px;
 }
 
 .phone__link {
   text-decoration: none;
   color: inherit;
   font-weight: 700;
+  padding: 0;
 }
 
 .navigation__list__rightside {
@@ -109,6 +119,7 @@ body {
 
 .navigation__link__rightside {
   font-size: 14px;
+  padding: 6px 16px 6px 38px;
 }
 
 /* Основная часть */
@@ -125,20 +136,51 @@ body {
 
 /* Слайдер */
 
+.slider {
+  padding-left: 70px;
+  display: flex;
+}
+
 .slider__title {
   color: #2D3440;
 
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+
+  max-width: 470px;
+  margin: 0;
+  margin-top: 136px;
+
 }
 
 .slider__text {
   font-size: 18px;
   line-height: 24px;
+
+  max-width: 430px;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.slider__pagination__list {
+  display: flex;
+}
+
+.slideshow__list {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 /* Баннеры */
+
+.banners {
+  display: flex;
+  flex-direction: column;
+}
 
 .banners__slogan {
   color: #2D3440;
@@ -146,6 +188,22 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  text-align: center;
+
+  margin: 0 auto 55px;
+}
+
+.banners__list {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+  display: flex;
+  column-gap: 30px;
+}
+
+.banners__item {
+  width: 570px;
 }
 
 .banners__title {
@@ -240,6 +298,14 @@ body {
   .footer {
     width: 1170px;
     margin: 0 auto;
+
+    display: flex;
+  }
+
+  /* Социальные сети */
+
+  .social__list {
+    display: flex;
   }
 
   /* Дополнительная информация */
@@ -283,11 +349,26 @@ body {
 
   /* Страница каталога */
 
+  /* Основная часть - каталог */
+
+  .main__catalog {
+    width: 1170px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+
   /* Хлебные крошки */
 
-  .breadcrumbs__title {
+  .breadcrumbs {
     color: #2D3440;
 
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .breadcrumbs__title {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
@@ -298,11 +379,13 @@ body {
 
     padding: 0;
     margin: 0;
+
+    display: flex;
   }
 
   .breadcrumbs__link {
+    color: inherit;
     text-decoration: none;
-    color: #2D3440;
 
     font-weight: 700;
     font-size: 14px;
@@ -315,20 +398,37 @@ body {
 
   /* Фильтер */
 
-  .filter__group__title {
+  .filter {
     color: #2D3440;
 
+    margin: 0;
+    margin-bottom: 44px;
+
+  }
+
+  .filter__group__title {
     font-size: 14px;
     line-height: 20px;
   }
 
   /* Результаты поиска */
 
+  .catalog {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
   .catalog__list {
     list-style-type: none;
 
     padding: 0;
     margin: 0;
+
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+
+    column-gap: 30px;
+    row-gap: 40px;
   }
 
   .catalog__title {
@@ -349,11 +449,20 @@ body {
 
   /* Пагинация */
 
+  .pagination {
+    margin: 0;
+    margin-bottom: 40px;
+
+    display: flex;
+  }
+
   .pagination__list {
     list-style-type: none;
 
     padding: 0;
     margin: 0;
+
+    display: flex;
   }
 
   .pagination__link {
