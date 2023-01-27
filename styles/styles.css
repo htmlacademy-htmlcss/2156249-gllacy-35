@@ -220,12 +220,31 @@ body {
 
 /* Категории */
 
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
 .categories__slogan {
   color: #2D3440;
 
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  text-align: center;
+
+  margin: 0 auto 56px;
+}
+
+.categories__list {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  column-gap: 30px;
+  row-gap: 40px;
 }
 
 .categories__title {
@@ -246,15 +265,44 @@ body {
 
 /* О магазине */
 
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
 .profile__text__main {
   color: #2D3440;
 
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  text-align: center;
+
+  margin: 0 auto 56px;
+}
+
+.profile__list {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 506px 506px;
+  column-gap: 32px;
+  row-gap: 40px;
 }
 
   /* Блог */
+
+  .blog__subscription__wrapper {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  .blog {
+    width: 570px;
+    margin: 0;
+  }
 
   .blog__new {
     line-height: 20px;
@@ -268,7 +316,18 @@ body {
     line-height: 30px;
   }
 
+  /* Подписка */
+
+  .subsciption {
+    width: 570px;
+    margin: 0;
+  }
+
   /* Доставка */
+
+  .delivery {
+    display: flex;
+  }
 
   .delivery__title {
     color: #2D3440;
@@ -297,6 +356,7 @@ body {
 
   .footer {
     width: 1170px;
+    padding: 48px 0;
     margin: 0 auto;
 
     display: flex;
@@ -315,6 +375,12 @@ body {
 
     padding: 0;
     margin: 0;
+    margin-left: 299px;
+
+    display: grid;
+    grid-template-columns: 151px 182px;
+    column-gap: 24px;
+    row-gap: 8px;
   }
 
   .extra-information__link {
@@ -337,6 +403,8 @@ body {
 
     font-size: 12px;
     line-height: 16px;
+
+    margin-left: 200px;
   }
 
   .copyright__link__small {
