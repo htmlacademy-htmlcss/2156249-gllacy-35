@@ -177,68 +177,80 @@ body {
 
 /* Баннеры */
 
-.banners {
+.main__banners {
   display: flex;
   flex-direction: column;
 }
 
-.banners__slogan {
+.main__banners__slogan {
   color: #2D3440;
-
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
-
   margin: 0 auto 55px;
 }
 
-.banners__list {
+.main__banners__list {
   list-style-type: none;
-
   padding: 0;
   margin: 0;
   display: flex;
   column-gap: 30px;
 }
 
-.banners__item {
+.main__banners__item {
   width: 570px;
+  padding: 36px 219px 36px 36px;
+  box-sizing: border-box;
+  background-color: #FF7799;
+  color: #2D3440;
+  border-radius: 16px;
 }
 
-.banners__title {
-  color: #2D3440;
+.main__banners__item__raspberry {
+  background-image: url(../images/main__index/raspberries__banners__main.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
 
+.main__banners__item__marchmallow {
+  background-image: url(../images/main__index/marshmallow__banners__main.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.main__banners__title {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
-.banners__text {
-  color: #2D3440;
+.main__banners__text {
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 /* Категории */
 
-.categories {
+.main__categories {
   display: flex;
   flex-direction: column;
 }
 
-.categories__slogan {
+.main__categories__slogan {
   color: #2D3440;
-
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
-
-  margin: 0 auto 56px;
+  margin: 0 auto 107px;
 }
 
-.categories__list {
+.main__categories__list {
   list-style-type: none;
-
   padding: 0;
   margin: 0;
   display: grid;
@@ -247,17 +259,44 @@ body {
   row-gap: 40px;
 }
 
-.categories__title {
-  color: #2D3440;
+.main__categories__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  width: 270px;
+  padding: 133px 40px 24px;
+  box-sizing: border-box;
+}
 
+.main__categories__image {
+  position: absolute;
+  bottom: 164px;
+  left: 51px;
+}
+
+.main__categories__title {
+  color: #2D3440;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin: 0 auto 8px;
 }
 
-.categories__price {
-  color: #2D3440;
+.main__categories__text {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 16px;
+}
 
+.main__categories__price__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__categories__price {
+  color: #2D3440;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -265,25 +304,38 @@ body {
 
 /* О магазине */
 
-.profile {
-  display: flex;
-  flex-direction: column;
+.main__profile {
+  width: 1170px;
+  padding: 24px;
+  box-sizing: border-box;
+  margin: 0;
+  background-image: url(../images/main__index/waffle-background__main.png);
+  background-color: #feafc3;
+  color: #565C66;
+  background-size: cover;
+  background-repeat: repeat-x;
+  border-radius: 16px;
 }
 
-.profile__text__main {
-  color: #2D3440;
+.main__profile__wrapper {
+  width: 1122px;
+  padding: 56px 40px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
 
+.main__profile__text__main {
+  color: #2D3440;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
-
   margin: 0 auto 56px;
 }
 
-.profile__list {
+.main__profile__list {
   list-style-type: none;
-
   padding: 0;
   margin: 0 auto;
   display: grid;
@@ -294,62 +346,234 @@ body {
 
   /* Блог */
 
-  .blog__subscription__wrapper {
+  .main__blog__subscription__wrapper {
     display: flex;
     column-gap: 30px;
   }
 
-  .blog {
+  .main__blog {
     width: 570px;
+    padding: 32px;
+    border-radius: 16px;
+    box-sizing: border-box;
     margin: 0;
+    background-image: url(../images/main__index/blog-background__main.png);
+    background-color: #feafc3;
+    color: #565C66;
+    background-size: 120% auto;
+    background-repeat: no-repeat;
+    background-position: 34% center;
   }
 
-  .blog__new {
+  .main__blog__new {
     line-height: 20px;
+    margin: 0;
+    margin-bottom: 12px;
   }
 
-  .blog__title {
+  .main__blog__title {
     color: #2D3440;
-
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    width: 303px;
+    margin: 0;
   }
 
   /* Подписка */
 
-  .subsciption {
+  .main__subscription {
     width: 570px;
+    padding: 6px;
+    box-sizing: border-box;
     margin: 0;
+    background-image: url(../images/main__index/post-background__main.png);
+    background-color: #feafc3;
+    color: #565C66;
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 16px;
+  }
+
+  .main__subscription__wrapper {
+    width: 558px;
+    padding: 26px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+  }
+
+  .main__subscription__text {
+    margin: 0;
+    margin-bottom: 42px;
+  }
+
+  .main__subscription__form__input {
+    width: 332px;
+    height: 48px;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    margin: 0;
+    color: #2D3440;
+    background-color: #ffffff;
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
+
   }
 
   /* Доставка */
 
-  .delivery {
+  .main__delivery {
     display: flex;
+    column-gap: 135px;
+    height: 534px;
+    padding: 64px 64px 64px 100px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    position: relative;
   }
 
-  .delivery__title {
+  .main__delivery::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(../images/main__index/delivery-background__main.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    transform: scale(-1, 1);
+    border-radius: 16px;
+    background-color: #feafc3;
+    color: #565C66;
+  }
+
+  .main__delivery__text__wrapper {
+    width: 381px;
+    margin: 0;
+    margin-top: 103px;
+  }
+
+  .main__delivery__title {
     color: #2D3440;
 
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
+
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .main__delivery__text {
+    margin: 0;
+  }
+
+  .main__delivery__form__wrapper {
+    width: 500px;
+    padding: 40px 100px 42px 40px;
+    box-sizing: border-box;
+    background-color: #FCFCFC;
+    box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+    border-radius: 8px;
+  }
+
+  .main__delivery__form__text {
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  .main__delivery__form {
+    display: grid;
+    width: 420px;
+    grid-template-columns: 117px 287px;
+    grid-gap: 16px 20px;
+  }
+
+  .field__group {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .main__delivery__form__address {
+    grid-column: 1 / -1;
+  }
+
+  .main__delivery__form__label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2D3440;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .main__delivery__form__input {
+    margin: 0;
+    padding: 14px 16px;
+    line-height: 20px;
+    color: #2D3440;
+    background-color: #ffffff;
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
   }
 
   /* Адрес */
 
-  .address__text {
-    color: #2D3440;
+  .main__address {
+    height: 492px;
+    padding: 64px 0 64px 64px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    background-image: url(../images/main__index/address-background__main.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-color: #feafc3;
+    color: #565C66;
+  }
 
+  .main__address__wrapper {
+    width: 343px;
+    padding: 40px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #FCFCFC;
+    color: #565C66;
+    box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  }
+
+  .main__address__text__minor {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+
+  .main__address__text {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    color: #2D3440;
+    margin: 0;
+    margin-bottom: 24px;
   }
 
-  .address__text__minor__extra {
+  .main__address__phone__link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #2D3440;
+  }
+
+  .main__address__text__minor__extra {
     font-size: 14px;
     line-height: 20px;
+    margin: 0;
+    margin-bottom: 32px;
   }
 
   /* Подвал */
