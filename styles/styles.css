@@ -299,9 +299,26 @@ body {
 }
 
 .main__social__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   position: absolute;
+  right: 0;
+  bottom: 0;
   display: flex;
+  column-gap: 16px;
 }
+
+.main__social__item {
+  width: 24px;
+  height: 24px;
+}
+
+.main__social__link {
+  display: block;
+}
+
+
 
 /* Баннеры */
 
