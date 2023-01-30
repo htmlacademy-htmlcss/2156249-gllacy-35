@@ -62,81 +62,73 @@
     <main class="main__index main__container">
       <h1 class="visually-hidden">Магазин Глейси</h1>
 
-      <section class="slider">
+      <section class="main__slider">
         <h2 class="visually-hidden">Галерея товаров в виде слайдера</h2>
-
-        <div class="slider__information__wrapper">
-          <h3 class="slider__title">Нежный пломбир
-            с клубничным джемом</h3>
-          <p class="slider__text">Натуральное мороженое из свежих сливок
-            и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-          <button class="button slider__button" type="button">Заказать</button>
-
-          <ul class="slider__pagination__list">
-            <li class="slider__pagination__item">
-              <button class="button slider__pagination__button slider__pagination__button__current" type="button">
+        <div class="main__slider__information__wrapper">
+          <h3 class="main__slider__title">
+            Нежный пломбир <br>
+            с клубничным джемом
+          </h3>
+          <p class="main__slider__text">Натуральное мороженое из свежих сливок
+            и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
+          </p>
+          <button class="button main__slider__button" type="button">Заказать</button>
+          <ul class="main__slider__pagination__list">
+            <li class="main__slider__pagination__item">
+              <button class="button main__slider__pagination__button main__slider__pagination__button__current" type="button">
                 <span class="visually-hidden">1 фото</span>
               </button>
             </li>
-            <li class="slider__pagination__item">
-              <button class="button slider__pagination__button" type="button">
+            <li class="main__slider__pagination__item">
+              <button class="button main__slider__pagination__button" type="button">
                 <span class="visually-hidden">2 фото</span>
               </button>
             </li>
-            <li class="slider__pagination__item">
-              <button class="button slider__pagination__button" type="button">
+            <li class="main__slider__pagination__item">
+              <button class="button main__slider__pagination__button" type="button">
                 <span class="visually-hidden">3 фото</span>
               </button>
             </li>
           </ul>
         </div>
-
-        <div class="slider__pictures__wrapper">
-          <ul class="slideshow__list">
-            <li class="slideshow__item">
-              <a class="slideshow__link" href="">
-                <img class="slideshow__image" src="images/main__index/icecream-big__main.png" width="306px"
+        <div class="main__slider__pictures__wrapper">
+          <ul class="main__slideshow__list">
+            <li class="main__slideshow__item main__slideshow__item__big">
+                <img class="main__slideshow__image" src="images/main__index/icecream-big__main.png" width="306px"
                   height="507px" alt="Кубничный пломбир в вафельном стаканчике, политый клубничным джемом.">
-              </a>
+                <button class="button main__slideshow__button main__slideshow__button__prev" type="button">
+                  <span class="visually-hidden">Предыдущее фото</span>
+                </button>
+                <button class="button main__slideshow__button main__slideshow__button__next" type="button">
+                  <span class="visually-hidden">Следующее фото</span>
+                </button>
             </li>
-            <li class="slideshow__item">
-              <a class="slideshow__link" href="">
-                <img class="slideshow__image" src="images/main__index/icecream-yellow-small__main.png" width="66px"
+            <li class="main__slideshow__item main__slideshow__item__small">
+                <img class="main__slideshow__image main__slideshow__image__yellow__small" src="images/main__index/icecream-yellow-small__main.png" width="66px"
                   height="150px" alt="Сливочное мороженное со вкусом банана в вафельном стаканчике.">
-              </a>
             </li>
-            <li class="slideshow__item">
-              <a class="slideshow__link" href="">
-                <img class="slideshow__image" src="images/main__index/icecream-pink-small__main.png" width="66px"
+            <li class="main__slideshow__item main__slideshow__item__small">
+                <img class="main__slideshow__image" src="images/main__index/icecream-pink-small__main.png" width="66px"
                   height="150px" alt="Карамельный пломбир в вафельном стаканчике, посыпанный маршмеллоу.">
-              </a>
             </li>
           </ul>
-
-          <button class="button slideshow__button slideshow__button__prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="button slideshow__button slideshow__button__next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
-
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy">
+          <ul class="main__social__list">
+            <li class="main__social__item">
+              <a class="main__social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">
                   Телеграмм
                 </span>
               </a>
             </li>
-            <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">
+            <li class="main__social__item">
+              <a class="main__social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">
                   Вконтакте
                 </span>
               </a>
             </li>
-            <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+            <li class="main__social__item">
+              <a class="main__social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">
                   YouTube
                 </span>
@@ -307,7 +299,7 @@
             </p>
             <form class="main__subscription__form" action="https://echo.htmlacademy.ru/" method="get">
               <input class="main__subscription__form__input" placeholder="email@example.com" type="email">
-              <button class="button main__subscription__form__button" type="submit">
+              <button class="button button__pink main__subscription__form__button" type="submit">
                 Отправить
               </button>
             </form>
@@ -349,7 +341,7 @@
               <input class="main__delivery__form__input input__address" id="address__field" type="text" name="address"
                 placeholder="ул. Большая Конюшенная, 19/8">
             </div>
-            <button class="button main__delivery__form__button" type="submit">
+            <button class="button button__pink main__delivery__form__button" type="submit">
               Отправить
             </button>
           </form>
@@ -374,7 +366,7 @@
           <p class="main__address__text__minor__extra">
             (с 10 до 20 ежедневно)
           </p>
-          <a class="main__address__link button" href="">
+          <a class="main__address__link button button__pink" href="">
             Форма обратной связи
           </a>
         </div>
