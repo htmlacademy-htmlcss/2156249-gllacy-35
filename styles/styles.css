@@ -1018,17 +1018,15 @@ body {
   stroke-opacity: 100%;
 }
 
-
-
 /* Дополнительная информация */
 
 .footer__extra-information__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-left: 299px;
+  margin-left: 323px;
   display: grid;
-  grid-template-columns: 151px 182px;
+  grid-template-columns: 126px 182px;
   column-gap: 24px;
   row-gap: 8px;
 }
@@ -1043,19 +1041,36 @@ body {
 
 .footer__extra-information__link__current {
   font-weight: 700;
+  position: relative;
+}
+
+.footer__extra-information__link__current::before {
+  content: url(../images/footer/heart-icon__footer.svg);
+  position: absolute;
+  left: -24px;
+  top: 1px;
 }
 
 /* Копирайт */
+
+.footer__copyright {
+  margin: 0;
+  margin-left: 200px;
+}
+
+.footer__copyright__link {
+  display: block;
+  margin-bottom: 15px;
+}
 
 .footer__copyright__text {
   color: #2D3440;
   font-size: 12px;
   line-height: 16px;
-  margin-left: 200px;
+  margin: 0;
 }
 
 .footer__copyright__link__small {
-  text-decoration: none;
   color: inherit;
 }
 
