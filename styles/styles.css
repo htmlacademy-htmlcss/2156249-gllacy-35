@@ -403,7 +403,51 @@ body {
 
 .main__social__link {
   display: block;
+  position: relative;
 }
+
+.main__social__link:hover::before {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2D3440;
+  z-index: -1;
+}
+
+.main__social__link:active::before {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2D3440;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.main__social__link:focus::before {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2D3440;
+  z-index: -1;
+}
+
+.main__social__link:focus .main__social__icon__stroke {
+  stroke:  #2D3440;
+  stroke-opacity: 100%;
+}
+
 
 /* Баннеры */
 
@@ -929,7 +973,52 @@ body {
 
 .footer__social__link {
   display: block;
+  position: relative;
 }
+
+.footer__social__link:hover::before {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2D3440;
+  z-index: -1;
+}
+
+.footer__social__link:active::before {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2D3440;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.footer__social__link:focus::before {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2D3440;
+  z-index: -1;
+}
+
+.footer__social__link:focus .footer__social__icon__stroke {
+  stroke:  #2D3440;
+  stroke-opacity: 100%;
+}
+
+
 
 /* Дополнительная информация */
 
