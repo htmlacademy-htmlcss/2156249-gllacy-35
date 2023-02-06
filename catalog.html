@@ -60,21 +60,21 @@
     <main class="main__catalog main__container">
       <h1 class="visually-hidden">Каталог магазина Глейси</h1>
 
-      <section class="breadcrumbs">
-        <h2 class="breadcrumbs__title">Сливочное мороженое</h2>
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="index.html">
+      <section class="catalog__breadcrumbs">
+        <h2 class="catalog__breadcrumbs__title">Сливочное мороженое</h2>
+        <ul class="catalog__breadcrumbs__list">
+          <li class="catalog__breadcrumbs__item">
+            <a class="catalog__breadcrumbs__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="catalog.html">
+          <li class="catalog__breadcrumbs__item">
+            <a class="catalog__breadcrumbs__link" href="catalog.html">
               Каталог
             </a>
           </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link breadcrumbs__link__current" href="#">
+          <li class="catalog__breadcrumbs__item">
+            <a class="catalog__breadcrumbs__link catalog__breadcrumbs__link__current" href="#">
               Сливочное мороженое
             </a>
           </li>
@@ -93,7 +93,6 @@
                 <option class="select-control__option" value="new">Новинки</option>
               </select>
             </div>
-
             <div class="catalog__filter__group">
               <legend class="catalog__filter__group__title">Цена: 100 ₽ – 500 ₽</legend>
               <div class="range">
@@ -108,7 +107,6 @@
                 </button>
               </div>
             </div>
-
             <div class="catalog__filter__group">
               <legend class="catalog__filter__group__title">Жирность:</legend>
               <ul class="catalog__filter__list">
@@ -144,39 +142,43 @@
               </ul>
             </div>
           </div>
-
           <div class="catalog__filter__group__wrapper wrapper__lower">
             <div class="catalog__filter__group">
               <legend class="catalog__filter__group__title">Наполнители:</legend>
               <ul class="catalog__filter__list catalog__filter__list__fillers">
                 <li class="catalog__filter__item">
                   <label class="control">
-                    <input class="control__input" type="checkbox" name="chocolate" checked>
-                    Шоколадные
+                    <input class="visually-hidden control__input" type="checkbox" name="chocolate" checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">шоколадные</span>
                   </label>
                 </li>
                 <li class="catalog__filter__item">
                   <label class="control">
-                    <input class="control__input" type="checkbox" name="sugar topping" checked>
-                    Сахарные посыпки
+                    <input class="visually-hidden control__input" type="checkbox" name="sugar topping" checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">сахарные посыпки</span>
                   </label>
                 </li>
                 <li class="catalog__filter__item">
                   <label class="control">
-                    <input class="control__input" type="checkbox" name="fruit">
-                    Фрукты
+                    <input class="visually-hidden control__input" type="checkbox" name="fruit">
+                    <span class="control__mark"></span>
+                    <span class="control__label">фрукты</span>
                   </label>
                 </li>
                 <li class="catalog__filter__item">
                   <label class="control">
-                    <input class="control__input" type="checkbox" name="syrup">
-                    Сиропы
+                    <input class="visually-hidden control__input" type="checkbox" name="syrup">
+                    <span class="control__mark"></span>
+                    <span class="control__label">сиропы</span>
                   </label>
                 </li>
                 <li class="catalog__filter__item">
                   <label class="control">
-                    <input class="control__input" type="checkbox" name="jam">
-                    Джемы
+                    <input class="visually-hidden control__input" type="checkbox" name="jam">
+                    <span class="control__mark"></span>
+                    <span class="control__label">джемы</span>
                   </label>
                 </li>
               </ul>
@@ -362,47 +364,57 @@
         </ul>
       </section>
 
-      <section class="pagination">
+      <section class="catalog__pagination">
         <h2 class="visually-hidden">Выбор следующей страницы</h2>
 
-        <button class="button pagination__button" type="button">
+        <button class="button catalog__pagination__button" type="button">
           Показать ещё
         </button>
 
-        <button class="button pagination__button__minor" type="button">
+        <button class="button catalog__pagination__button__minor minor__left" type="button">
+          <svg class="catalog__pagination__icon__left" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="7" height="12" fill="none">
+            <path fill="#2D3440" fill-rule="evenodd"
+              d="M5.86 11.14a.66.66 0 0 0 .95-.95L2.6 6l4.2-4.2a.67.67 0 0 0-.95-.94L1.2 5.52a.66.66 0 0 0 0 .94l4.66 4.68Z"
+              clip-rule="evenodd" />
+          </svg>
           <span class="visually-hidden">
             Назад
           </span>
         </button>
 
-        <ol class="pagination__list">
-          <li class="pagination__item">
-            <a class="pagination__link pagination__link__current" href="#">
+        <ol class="catalog__pagination__list">
+          <li class="catalog__pagination__item">
+            <a class="catalog__pagination__link catalog__pagination__link__current" href="#">
               1
             </a>
           </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">
+          <li class="catalog__pagination__item">
+            <a class="catalog__pagination__link" href="#">
               2
             </a>
           </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">
+          <li class="catalog__pagination__item">
+            <a class="catalog__pagination__link" href="#">
               3
             </a>
           </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">
+          <li class="catalog__pagination__item">
+            <a class="catalog__pagination__link" href="#">
               4
             </a>
           </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">
+          <li class="catalog__pagination__item">
+            <a class="catalog__pagination__link" href="#">
               5
             </a>
           </li>
         </ol>
-        <button class="button pagination__button__minor" type="button">
+        <button class="button catalog__pagination__button__minor minor__right" type="button">
+          <svg class="catalog__pagination__icon__right" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="7" height="12" fill="none">
+            <path fill="#2D3440" fill-rule="evenodd"
+              d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z"
+              clip-rule="evenodd" />
+          </svg>
           <span class="visually-hidden">
             Вперёд
           </span>

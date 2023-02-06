@@ -1088,26 +1088,47 @@ body {
 
 /* Хлебные крошки */
 
-.breadcrumbs {
+.catalog__breadcrumbs {
   color: #2D3440;
   margin: 0;
   margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 62px;
 }
 
-.breadcrumbs__title {
+.catalog__breadcrumbs__title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
 }
 
-.breadcrumbs__list {
+.catalog__breadcrumbs__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
+  column-gap: 28px;
 }
 
-.breadcrumbs__link {
+.catalog__breadcrumbs__item {
+  position: relative;
+}
+
+.catalog__breadcrumbs__item::after {
+  content: url(../images/catalog/breadcrumbs-arrow-icon__catalog.svg);
+  position: absolute;
+  right: -18px;
+  top: -1px;
+}
+
+.catalog__breadcrumbs__item:last-child::after {
+  content: none;
+}
+
+.catalog__breadcrumbs__link {
   color: inherit;
   text-decoration: none;
   font-weight: 700;
@@ -1115,7 +1136,7 @@ body {
   line-height: 20px;
 }
 
-.breadcrumbs__link__current {
+.catalog__breadcrumbs__link__current {
   text-decoration: underline;
 }
 
@@ -1312,8 +1333,6 @@ body {
   height: 6px;
   border-radius: 50%;
   background-color: #2D3440;
-
-
 }
 
 .control__label {
@@ -1323,6 +1342,35 @@ body {
 
 .catalog__filter__list__fillers {
   width: 604px;
+}
+
+/* .control__input[type="checkbox"] + .control__mark {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2D3440;
+  border-radius: 2px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 4px;
+  left: -2px;
+} */
+
+.control__input[type="checkbox"] + .control__mark {
+  position: absolute;
+  top: 2px;
+  left: -2px;
+  content: url(../images/catalog/checked-false-icon__catalog.svg);
+}
+
+.control__input[type="checkbox"]:checked + .control__mark {
+  content: none;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  position: absolute;
+  top: -1px;
+  content: url(../images/catalog/checked-icon__catalog.svg);
 }
 
 .catalog__filter__button {
@@ -1391,20 +1439,51 @@ body {
 
 /* Пагинация */
 
-.pagination {
+.catalog__pagination {
   margin: 0;
   margin-bottom: 40px;
   display: flex;
+  align-items: center;
 }
 
-.pagination__list {
+.catalog__pagination__button__minor {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid #2D3440;
+  outline: none;
+  border-radius: 0%;
+  position: relative;
+}
+
+.minor__left {
+  margin-right: 8px;
+}
+
+.minor__right {
+  margin-left: 8px;
+}
+
+.catalog__pagination__icon__left {
+  position: absolute;
+  bottom: 1px;
+  left: 2px;
+}
+
+.catalog__pagination__icon__right {
+  position: absolute;
+  bottom: 1px;
+  right: 2px;
+}
+
+.catalog__pagination__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
-.pagination__link {
+.catalog__pagination__link {
   text-decoration: none;
   color: #2D3440;
   font-size: 16px;
