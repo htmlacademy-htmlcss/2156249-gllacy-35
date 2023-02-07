@@ -68,34 +68,146 @@ body {
   color: #2D3440;
   background-color: #FCFCFC;
   border: none;
-  outline: 4px solid rgba(252, 252, 252, 0.4);
   border-radius: 26px;
-  filter: drop-shadow(0, 4px 12px rgba(45, 52, 64, 0.1));
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  position: relative;
+}
+
+.button::after {
+  content: "";
+  width: 176px;
+  height: 44px;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  border-radius: 26px;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+}
+
+.button:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+}
+
+.button:hover::after {
+  border-color: #FCFCFC;
+}
+
+.button:active {
+  background-color: #FCFCFC;
+}
+
+.button:active::after {
+  border: 2px solid #2D3440;
+  top: -2px;
+  left: -2px;
+}
+
+.button:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.button:focus::after {
+  border: 2px solid #2D3440;
+  top: -2px;
+  left: -2px;
+}
+
+.button:disabled {
+  opacity: 40%;
+}
+
+.button:disabled::after {
+  opacity: 40%;
 }
 
 .button__pink {
   color: #FCFCFC;
   background-color: #FF2F64;
-  border: none;
-  outline: 4px solid rgba(255, 47, 100, 0.3);
+  width: 152px;
+  position: relative;
+}
+
+.button__pink::after {
+  content: "";
+  width: 152px;
+  height: 44px;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  border-radius: 26px;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+}
+
+.button__pink:hover {
+  color: #2D3440;
+  background-color: #FCFCFC;
+}
+
+.button__pink:hover::after {
+  border-color: #FF2F64;
+}
+
+.button__pink:active {
+  background-color: #FEAFC3;
+}
+
+.button__pink:active::after {
+  border: 2px solid #2D3440;
+  top: -2px;
+  left: -2px;
+}
+
+.button__pink:focus {
+  background-color: #FF2F64;
+}
+
+.button__pink:focus::after {
+  border: 2px solid #2D3440;
+  top: -2px;
+  left: -2px;
+}
+
+.button__pink:disabled {
+  background-color: #B9B9B9;
+}
+
+.button__pink:disabled::after {
+  border: 4px solid rgba(185, 185, 185, 0.3);
 }
 
 .main__slider__button {
   width: 139px;
 }
 
+.main__slider__button::after {
+  width: 139px;
+}
+
 .main__slider__pagination__button {
   width: 12px;
   height: 12px;
+  padding: 0;
   border: none;
-  outline: none;
   border-radius: 50%;
-  background-color: #FCFCFC;
-  opacity: 30%;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.main__slider__pagination__button:hover {
+  border: 1px solid #FCFCFC;
+}
+
+.main__slider__pagination__button:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: none;
+}
+
+.main__slider__pagination__button:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 1px solid #2D3440;
 }
 
 .main__slider__pagination__button__current {
-  opacity: 100%;
+  background-color: #FCFCFC;
 }
 
 .main__slideshow__button {
@@ -108,7 +220,7 @@ body {
 }
 
 .main__categories__button,
-.results__categories__button {
+.catalog__results__button {
   width: 32px;
   height: 32px;
   box-sizing: border-box;
@@ -119,9 +231,61 @@ body {
   position: relative;
 }
 
-.main__subscription__form__button,
-.main__delivery__form__button {
-  width: 152px;
+/* Кнопки каталога */
+
+.catalog__filter__button {
+  align-self:flex-end;
+  width: 185px;
+  height: 36px;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.catalog__filter__button::after {
+  width: 185px;
+  height: 36px;
+  border: 2px solid #FCFCFC;
+  top: -2px;
+  left: -2px;
+}
+
+.catalog__filter__button:hover {
+  background-color: #FCFCFC;
+}
+
+.catalog__filter__button:hover::after {
+  border-color: rgba(252, 252, 252, 0.3);
+}
+
+.catalog__filter__button:active {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.catalog__filter__button:active::after {
+  border: none;
+}
+
+.catalog__filter__button:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.catalog__filter__button:focus::after {
+  border-color: #2D3440;
+}
+
+.catalog__filter__button:disabled {
+  opacity: 40%;
+}
+
+.catalog__filter__button:disabled::after {
+  opacity: 40%;
+}
+
+.catalog__pagination__button {
+  width: 179px;
+}
+
+.catalog__pagination__button::after {
+  width: 179px;
 }
 
 /* Шапка */
@@ -947,6 +1111,10 @@ body {
   padding: 12px 32px;
 }
 
+.main__address__link::after {
+  width: 250px;
+}
+
 /* Подвал */
 
 .footer {
@@ -1373,18 +1541,14 @@ body {
   content: url(../images/catalog/checked-icon__catalog.svg);
 }
 
-.catalog__filter__button {
-  align-self:flex-end;
-}
-
 /* Результаты поиска */
 
-.results {
+.catalog__results {
   margin: 0;
   margin-bottom: 16px;
 }
 
-.results__list {
+.catalog__results__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -1394,7 +1558,7 @@ body {
   row-gap: 40px;
 }
 
-.results__item {
+.catalog__results__item {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1405,13 +1569,13 @@ body {
   box-sizing: border-box;
 }
 
-.results__image {
+.catalog__results__image {
   position: absolute;
   bottom: 164px;
   left: 51px;
 }
 
-.results__title {
+.catalog__results__title {
   color: #2D3440;
   font-weight: 700;
   font-size: 20px;
@@ -1419,22 +1583,64 @@ body {
   margin: 0 auto 8px;
 }
 
-.results__text {
+.catalog__results__text {
   text-align: center;
   margin: 0;
   margin-bottom: 16px;
 }
 
-.results__price__wrapper {
+.catalog__results__price__wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.results__price {
+.catalog__results__price {
   color: #2D3440;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.catalog__results__button__icon {
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+}
+
+.catalog__results__button:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FF2F64;
+}
+
+.catalog__results__button:hover .catalog__results__button__path {
+  fill: #2D3440;
+}
+
+.catalog__results__button:active {
+  background-color: #FFCBD8;
+  border: 2px solid #FF2F64;
+}
+
+.catalog__results__button:active .catalog__results__button__path {
+  fill: #2D3440;
+}
+
+.catalog__results__button:focus {
+  background-color: #FF2F64;
+  border: 2px solid #2D3440;
+}
+
+.catalog__results__button:focus .catalog__results__button__path {
+  fill: #FCFCFC;
+}
+
+.catalog__results__button:disabled {
+  background-color: #B9B9B9;
+  border: 2px solid #B9B9B9;
+}
+
+.catalog__results__button:disabled .catalog__results__button__path {
+  fill: #565C66;
 }
 
 /* Пагинация */
@@ -1442,6 +1648,7 @@ body {
 .catalog__pagination {
   margin: 0;
   margin-bottom: 40px;
+  padding: 41px 0 41px 488px;
   display: flex;
   align-items: center;
 }
@@ -1450,13 +1657,14 @@ body {
   width: 16px;
   height: 16px;
   background-color: transparent;
-  border: 1px solid #2D3440;
+  border: none;
   outline: none;
   border-radius: 0%;
   position: relative;
 }
 
 .minor__left {
+  margin-left: auto;
   margin-right: 8px;
 }
 
@@ -1468,6 +1676,10 @@ body {
   position: absolute;
   bottom: 1px;
   left: 2px;
+}
+
+.catalog__pagination__icon__left__disabled {
+  opacity: 30%;
 }
 
 .catalog__pagination__icon__right {
@@ -1483,9 +1695,65 @@ body {
   display: flex;
 }
 
+.catalog__pagination__item {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .catalog__pagination__link {
   text-decoration: none;
   color: #2D3440;
   font-size: 16px;
   line-height: 20px;
+  width: 24px;
+  height: 24px;
+  padding: 2px 8px;
+  box-sizing: border-box;
+}
+
+.catalog__pagination__link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 50px;
+}
+
+.catalog__pagination__link:active {
+  border: 1px solid #FCFCFC;
+  padding-top: 1px;
+  padding-left: 7px;
+  box-sizing: border-box;
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 50px;
+}
+
+.catalog__pagination__link:focus {
+  border: 1px solid #2D3440;
+  padding-top: 1px;
+  padding-left: 7px;
+  box-sizing: border-box;
+  background-color: rgba(252, 252, 252, 0.3);;
+  border-radius: 50px;
+}
+
+.catalog__pagination__link__current {
+  border-radius: 50%;
+  background-color: #FCFCFC;
+  padding-left: 8px;
+}
+
+/* Футер каталога */
+
+.catalog__footer {
+  position: relative;
+}
+
+.catalog__footer::before {
+  content: "";
+  width: 1170px;
+  height: 1px;
+  background-color: rgba(252, 252, 252, 0.3);
+  position: absolute;
+  top: 0;
 }
