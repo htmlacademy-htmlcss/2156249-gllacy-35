@@ -299,14 +299,14 @@ body {
   padding: 24px 0;
 }
 
-.logo__link {
+.header__logo__link {
   display: block;
   width: 137px;
   height: 56px;
   margin: 0;
 }
 
-.navigation {
+.header__navigation {
   display: flex;
   margin-left: 16px;
   width: 1017px;
@@ -314,20 +314,50 @@ body {
   align-items: center;
 }
 
-.navigation__list {
+.header__navigation__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
-.navigation__link {
+.header__navigation__item__catalog {
+  position: relative;
+}
+
+.header__navigation__item__catalog::after {
+  content: url(../images/header/arrow-icon__header.svg);
+  position: absolute;
+  right: 16px;
+  top: -1px;
+
+}
+
+.header__navigation__link {
   text-decoration: none;
   color: inherit;
   padding: 8px 16px;
 }
 
-.navigation__link__catalog {
+.header__navigation__link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+}
+
+.header__navigation__link:active {
+  background-color: #FCFCFC;
+  border-radius: 30px;
+}
+
+.header__navigation__link:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
+  border-radius: 30px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.header__navigation__link__catalog {
   padding-right: 38px;
 }
 
@@ -338,14 +368,86 @@ body {
   padding: 0;
 }
 
-.navigation__list__rightside {
+.header__navigation__list__rightside {
+  column-gap: 16px;
+  align-items: center;
   margin: 0;
 }
 
-.navigation__link__rightside {
+.header__navigation__link__rightside {
   font-size: 14px;
   padding: 6px 16px 6px 38px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
 }
+
+.header__navigation__link__rightside:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.header__navigation__link__rightside:active {
+  background-color: #FCFCFC;
+}
+
+.header__navigation__link__rightside:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
+  padding: 6px 14px 6px 36px;
+  /* box-sizing: border-box; */
+  /* ПОЧЕМУ НЕ СРАБОТАЛ box-sizing???? */
+}
+
+.search__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 50%;
+  position: relative;
+}
+
+.search__link::after {
+  content: url(../images/header/search-icon__header.svg);
+  position: absolute;
+  left: 8px;
+  top: 7px;
+}
+
+.search__link:focus::after {
+  left: 6px;
+  top: 5px;
+}
+
+.login__link {
+  position: relative;
+}
+
+.login__link::before {
+  content: url(../images/header/log-in-icon__header.svg);
+  position: absolute;
+  left: 12px;
+  top: 6px;
+}
+
+.login__link:focus::before {
+  left: 10px;
+}
+
+.basket__link {
+  position: relative;
+}
+
+.basket__link::before {
+  content: url(../images/header/basket-icon__header.svg);
+  position: absolute;
+  left: 12px;
+  top: 6px;
+}
+
+.basket__link:focus::before {
+  left: 10px;
+}
+
 
 /* Основная часть */
 
