@@ -20,6 +20,35 @@
             <a class="header__navigation__link header__navigation__link__catalog" href="#">
               Каталог
             </a>
+            <div class="popup popup__menu">
+              <ul class="popup__menu__list">
+                <li class="popup__menu__item popup__menu__item__new">
+                  <a class="popup__menu__link popup__menu__link__new" href="#">
+                    Новинки
+                  </a>
+                </li>
+                <li class="popup__menu__item">
+                  <a class="popup__menu__link" href="#">
+                    Сливочное
+                  </a>
+                </li>
+                <li class="popup__menu__item">
+                  <a class="popup__menu__link" href="#">
+                    Щербеты
+                  </a>
+                </li>
+                <li class="popup__menu__item">
+                  <a class="popup__menu__link" href="#">
+                    Фруктовый лед
+                  </a>
+                </li>
+                <li class="popup__menu__item">
+                  <a class="popup__menu__link" href="#">
+                    Мелорин
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="header__navigation__item">
             <a class="header__navigation__link" href="#">
@@ -42,11 +71,32 @@
             <a class="header__navigation__link header__navigation__link__rightside search__link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
+            <div class="popup popup__search">
+              <input class="popup__search__input" type="search" placeholder="Поиск по сайту">
+            </div>
           </li>
           <li class="header__navigation__item">
             <a class="header__navigation__link header__navigation__link__rightside login__link" href="#">
               Вход
             </a>
+            <div class="popup popup__login">
+              <h2 class="popup__login__title">Корзина</h2>
+              <form class="popup__login__form" action="https://echo.htmlacademy.ru/" method="get">
+                <input class="popup__login__form__input popup__login__form__input__email"
+                  placeholder="email@example.com" type="e-mail">
+                <input class="popup__login__form__input popup__login__form__input__password" placeholder="Пароль"
+                  type="password">
+                <div class="popup__login__form__button__wrapper">
+                  <button class="button button__pink popup__login__form__button" type="submit">
+                    Отправить
+                  </button>
+                  <div class="popup__login__form__link__wrapper">
+                    <a class="popup__login__form__link" href="#">Забыли пароль?</a>
+                    <a class="popup__login__form__link" href="#">Регистрация</a>
+                  </div>
+                </div>
+              </form>
+            </div>
           </li>
           <li class="header__navigation__item">
             <a class="header__navigation__link header__navigation__link__rightside basket__link" href="#">
@@ -87,6 +137,11 @@
                 </button>
                 <span class="popup__basket__price__final">Итого: 790 ₽</span>
               </div>
+            </div>
+            <div class="popup popup__basket__empty">
+              <h2 class="popup__basket__empty__title">
+                Ваша корзина пока пуста
+              </h2>
             </div>
           </li>
         </ul>
