@@ -1410,6 +1410,60 @@ body {
   border-radius: 4px;
 }
 
+.main__tooltip {
+  position: absolute;
+  margin: 3px 0 3px 4px;
+  width: 14px;
+  height: 14px;
+}
+
+.main__tooltip__button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.main__tooltip__icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.main__tooltip__text {
+  background-color: #FFFFFF;
+  color: #565C66;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+  padding: 10px 8px;
+  border: 1px solid #B9B9B9;
+  box-sizing: border-box;
+  border-radius: 1px;
+  box-shadow: 0 2px 12px rgba(173, 152, 143, 0.18);
+  width: 163px;
+  position: absolute;
+  left: 25px;
+  bottom: -25px;
+  display: none;
+}
+
+.main__tooltip__text::before {
+  content: url(../images/main__index/tooltip-arrow__main.svg);
+  width: 7px;
+  height: 14px;
+  position: absolute;
+  left: -7px;
+  top: 14px;
+}
+
+.main__tooltip__button:hover + .main__tooltip__text,
+.main__tooltip__button:focus + .main__tooltip__text {
+  display: block;
+}
+
 /* Адрес */
 
 .main__address {
