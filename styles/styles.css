@@ -39,6 +39,18 @@ body {
   min-height: 100%;
 }
 
+.body__pink {
+  background-color: #feafc3;
+}
+
+.body__blue {
+  background-color: #69A9FF;
+}
+
+.body__yellow {
+  background-color: #FCC850;
+}
+
 .main__container {
   flex-grow: 1;
 }
@@ -365,6 +377,11 @@ body {
   padding-right: 38px;
 }
 
+.header__navigation__link__catalog:focus {
+  padding-left: 14px;
+  padding-right: 36px;
+}
+
 .phone__link {
   text-decoration: none;
   color: inherit;
@@ -397,8 +414,6 @@ body {
   background-color: rgba(252, 252, 252, 0.5);
   border: 2px solid #2D3440;
   padding: 6px 14px 6px 36px;
-  /* box-sizing: border-box; */
-  /* ПОЧЕМУ НЕ СРАБОТАЛ box-sizing???? */
 }
 
 .search__link {
@@ -451,6 +466,33 @@ body {
 .basket__link:focus::before {
   left: 10px;
 }
+
+.header__navigation__link__current {
+  background-color: #FF4A78;
+  color: #FCFCFC;
+}
+
+.header__navigation__link__current:hover {
+  background-color: #FF4A78;
+  opacity: 0.6;
+}
+
+.header__navigation__link__current:active {
+  background-color: #FF4A78;
+  opacity: 0.3;
+}
+
+.header__navigation__link__current:focus {
+  background-color: #FF4A78;
+  border: 2px solid #000000;
+}
+
+.basket__link__current::before {
+  content: url(../images/header/basket-icon-white__header.svg);
+
+}
+
+/* Попапы */
 
 .popup {
   color: #2D3440;
@@ -664,6 +706,7 @@ body {
   min-width: 135px;
   padding: 8px 0;
   box-sizing: border-box;
+  display: none;
 }
 
 .popup__menu__list {
@@ -683,7 +726,7 @@ body {
   width: 103px;
   border: 1px solid #B9B9B9;
   position: absolute;
-  bottom: -4px;
+  bottom: -2px;
   left: 16px;
 }
 
@@ -703,7 +746,20 @@ body {
 
 .popup__menu__link__new {
   font-weight: 700;
-  margin-bottom: 8px;
+  padding-bottom: 14px;
+}
+
+.popup__menu__link:hover {
+  background-color: #FFCBD8;
+}
+
+.popup__menu__link:active {
+  background-color: #FF7799;
+}
+
+.popup__menu__link:focus {
+  background-color: #FF4A78;
+  color: #FCFCFC;
 }
 
 
@@ -903,10 +959,6 @@ body {
   border-radius: 50%;
   background-color: #FFCBD8;
   z-index: -1;
-}
-
-.main__slideshow__image__yellow__small {
-  transform: rotate(-20deg);
 }
 
 .main__social__list {
