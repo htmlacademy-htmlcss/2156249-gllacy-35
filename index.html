@@ -72,7 +72,7 @@
               <span class="visually-hidden">Поиск</span>
             </a>
             <div class="popup popup__search">
-              <input class="popup__search__input" type="search" placeholder="Поиск по сайту">
+              <input class="main__form__input popup__search__input" type="search" placeholder="Поиск по сайту">
             </div>
           </li>
           <li class="header__navigation__item">
@@ -82,9 +82,9 @@
             <div class="popup popup__login">
               <h2 class="popup__login__title">Корзина</h2>
               <form class="popup__login__form" action="https://echo.htmlacademy.ru/" method="get">
-                <input class="popup__login__form__input popup__login__form__input__email"
+                <input class="main__form__input popup__login__form__input popup__login__form__input__email"
                   placeholder="email@example.com" type="e-mail">
-                <input class="popup__login__form__input popup__login__form__input__password" placeholder="Пароль"
+                <input class="main__form__input popup__login__form__input popup__login__form__input__password" placeholder="Пароль"
                   type="password">
                 <div class="popup__login__form__button__wrapper">
                   <button class="button button__pink popup__login__form__button" type="submit">
@@ -154,13 +154,39 @@
       <section class="main__slider">
         <h2 class="visually-hidden">Галерея товаров в виде слайдера</h2>
         <div class="main__slider__information__wrapper">
-          <h3 class="main__slider__title">
-            Нежный пломбир <br>
-            с клубничным джемом
-          </h3>
-          <p class="main__slider__text">Натуральное мороженое из свежих сливок
-            и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
-          </p>
+          <ul class="main__slider__information__list">
+            <li class="main__slider__information__item">
+              <h3 class="main__slider__title">
+                Нежный пломбир <br>
+                с клубничным джемом
+              </h3>
+              <p class="main__slider__text">
+                Натуральное мороженое из свежих сливок
+                и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
+              </p>
+            </li>
+            <li class="main__slider__information__item visually-hidden">
+              <h3 class="main__slider__title">
+                Сливочное мороженое <br> со вкусом банана
+              </h3>
+              <p class="main__slider__text">
+                Сливочное мороженое с ярким банановым
+                вкусом подарит вам свежесть и наслаждение
+                даже в самый жаркий летний день.
+              </p>
+            </li>
+            <li class="main__slider__information__item visually-hidden">
+              <h3 class="main__slider__title">
+                Карамельный пломбир <br>
+                с маршмеллоу
+              </h3>
+              <p class="main__slider__text">
+                Необычный сладкий десерт с карамельным
+                топпингом и кусочками зефира завоюет
+                сердца сладкоежек всех возрастов.
+              </p>
+            </li>
+          </ul>
           <button class="button main__slider__button" type="button">
             Заказать
           </button>
@@ -448,7 +474,7 @@
               не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
             <form class="main__subscription__form" action="https://echo.htmlacademy.ru/" method="get">
-              <input class="main__subscription__form__input" placeholder="email@example.com" type="email" required>
+              <input class="main__form__input main__subscription__form__input" placeholder="email@example.com" type="email" required>
               <button class="button button__pink main__subscription__form__button" type="submit">
                 Отправить
               </button>
@@ -494,12 +520,12 @@
                   </span>
                 </span>
               </span>
-              <input class="main__delivery__form__input input__date" id="date__field" type="date" name="date"
+              <input class="main__form__input main__delivery__form__input input__date" id="date__field" type="text" name="date"
                 placeholder="01.04.2020">
             </div>
             <div class="field__group main__delivery__form__phone">
               <label class="main__delivery__form__label" for="phone__field">Телефон</label>
-              <input class="main__delivery__form__input input__phone" id="phone__field" type="tel" name="phone"
+              <input class="main__form__input main__delivery__form__input input__phone" id="phone__field" type="tel" name="phone"
                 placeholder="+7 800 999-00-00">
             </div>
             <div class="field__group main__delivery__form__address">
@@ -519,7 +545,7 @@
                   </span>
                 </span>
               </span>
-              <input class="main__delivery__form__input input__address" id="address__field" type="text" name="address"
+              <input class="main__form__input main__delivery__form__input input__address" id="address__field" type="text" name="address"
                 placeholder="ул. Большая Конюшенная, 19/8">
             </div>
             <button class="button button__pink main__delivery__form__button" type="submit">
@@ -644,7 +670,7 @@
     </footer>
   </body>
 
-  <!-- <div class="modal__container">
+  <div class="modal__container">
     <div class="modal__request">
       <button class="modal__button__close">
         <span class="visually-hidden">Закрыть</span>
@@ -652,9 +678,9 @@
       <section class="modal__content">
         <h2 class="modal__title">Мы обязательно ответим вам!</h2>
         <form class="modal__content__form" action="https://echo.htmlacademy.ru/" method="get">
-          <input class="modal__content__form__input" placeholder="Имя и фамилия" type="text">
-          <input class="modal__content__form__input" placeholder="email@example.com" type="e-mail">
-          <input class="modal__content__form__input modal__content__form__input__text" placeholder="В свободной форме"
+          <input class="main__form__input modal__content__form__input" placeholder="Имя и фамилия" type="text">
+          <input class="main__form__input modal__content__form__input" placeholder="email@example.com" type="e-mail">
+          <input class="main__form__input modal__content__form__input modal__content__form__input__text" placeholder="В свободной форме"
             type="text">
           <button class="button button__pink modal__content__form__button" type="submit">
             Отправить
@@ -662,6 +688,6 @@
         </form>
       </section>
     </div>
-  </div> -->
+  </div>
 
 </html>
