@@ -492,6 +492,7 @@ body {
 .header__navigation__link__current {
   background-color: #FF4A78;
   color: #FCFCFC;
+  border-radius: 30px;
 }
 
 .header__navigation__link__current:hover {
@@ -1865,6 +1866,15 @@ body {
 
 
 /* Страница каталога */
+
+/* Хедер каталога */
+
+.header__navigation__link__catalog__current::after {
+  content: url(../images/header/arrow-up-white__header.svg);
+  position: absolute;
+  right: 16px;
+  top: -2px;
+}
 
 /* Основная часть - каталог */
 
