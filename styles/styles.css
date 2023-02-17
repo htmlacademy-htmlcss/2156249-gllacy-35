@@ -1983,11 +1983,21 @@ body {
   width: 196px;
   height: 36px;
   border: none;
-  background-color: #FCFCFC;
-  opacity: 0.3;
+  background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
   padding-left: 16px;
   appearance: none;
+}
+
+.select-control:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.select-control:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #FCFCFC;
+  box-sizing: border-box;
+  outline: 0;
 }
 
 .range {
@@ -2133,6 +2143,22 @@ body {
   background-color: #2D3440;
 }
 
+.control__input:hover[type="radio"] + .control__mark {
+  border: 2px solid #FCFCFC;
+}
+
+.control__input:hover[type="radio"]:checked + .control__mark::before {
+  background-color: #fcfcfc;
+}
+
+.control__input:disabled[type="radio"] + .control__mark {
+  opacity: 50%;
+}
+
+.control__input:disabled[type="radio"]:checked + .control__mark::before {
+  opacity: 50%;
+}
+
 .control__label {
   font-size: 14px;
   line-height: 20px;
@@ -2161,6 +2187,14 @@ body {
   content: url(../images/catalog/checked-false-icon__catalog.svg);
 }
 
+.control__input:hover[type="checkbox"] + .control__mark {
+  content: url(../images/catalog/checked-false-icon-white__catalog.svg);
+}
+
+.control__input:disabled[type="checkbox"] + .control__mark {
+  opacity: 50%;
+}
+
 .control__input[type="checkbox"]:checked + .control__mark {
   content: none;
 }
@@ -2169,6 +2203,14 @@ body {
   position: absolute;
   top: -1px;
   content: url(../images/catalog/checked-icon__catalog.svg);
+}
+
+.control__input:hover[type="checkbox"]:checked + .control__mark::before {
+  content: url(../images/catalog/checked-icon-white__catalog.svg);
+}
+
+.control__input:disabled[type="checkbox"]:checked + .control__mark::before {
+  opacity: 50%;
 }
 
 /* Результаты поиска */
