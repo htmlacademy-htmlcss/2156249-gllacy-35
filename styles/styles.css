@@ -70,6 +70,7 @@ body {
 /* Кнопки */
 
 .button {
+  max-width: 300px;
   padding: 12px 34px;
   margin: 0;
   box-sizing: border-box;
@@ -254,11 +255,7 @@ body {
   position: relative;
 }
 
-.main__delivery__form__button {
-  position: absolute;
-  bottom: -77px;
-  left: 134px;
-}
+
 
 /* Кнопки каталога */
 
@@ -423,6 +420,8 @@ body {
   padding: 6px 16px 6px 38px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
+  display: block;
+  max-width: 300px;
 }
 
 .header__navigation__link__rightside:hover {
@@ -899,14 +898,16 @@ body {
 
 .main__slider__pagination__list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 156px;
   column-gap: 8px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   position: absolute;
   left: 0;
-  /* bottom: 0; */
-  top: 531px;
+  bottom: 0;
+  /* top: 531px; */
 }
 
 .main__slider__pictures__wrapper {
@@ -1061,7 +1062,10 @@ body {
   right: 2px;
   bottom: 7px;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 208px;
   column-gap: 16px;
+  row-gap: 10px;
 }
 
 .main__social__item {
@@ -1139,7 +1143,8 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .main__banners__item {
@@ -1200,7 +1205,7 @@ body {
   display: grid;
   grid-template-columns: 270px 270px 270px 270px;
   column-gap: 30px;
-  row-gap: 40px;
+  row-gap: 91px;
 }
 
 .main__categories__item {
@@ -1441,7 +1446,7 @@ body {
 
 .main__subscription__wrapper {
   width: 558px;
-  padding: 26px;
+  padding: 26px 26px 16px 26px;
   border-radius: 16px;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -1454,25 +1459,15 @@ body {
 
 .main__subscription__form__input {
   width: 332px;
-  margin: 0;
-  margin-right: 14px;
+  margin: 0 14px 10px 0;
 }
-
-/* .main__subscription__form__input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #B9B9B9;
-} */
-
-
 
 /* Доставка */
 
 .main__delivery {
   display: flex;
   column-gap: 135px;
-  height: 534px;
+  /* height: 534px; */
   padding: 64px 64px 64px 100px;
   margin-bottom: 80px;
   border-radius: 16px;
@@ -1538,7 +1533,6 @@ body {
   width: 420px;
   grid-template-columns: 117px 287px;
   grid-gap: 20px 16px;
-  position: relative;
 }
 
 .field__group {
@@ -1565,9 +1559,12 @@ body {
   line-height: 20px;
 }
 
-/* input[type=date]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-} */
+.main__delivery__form__button {
+  grid-column: 2/3;
+  width: 152px;
+  margin-top: 12px;
+  margin-left: 1px;
+}
 
 .main__tooltip {
   position: absolute;
@@ -1630,7 +1627,6 @@ body {
 /* Адрес */
 
 .main__address {
-  height: 492px;
   padding: 64px 0 64px 64px;
   border-radius: 16px;
   box-sizing: border-box;
