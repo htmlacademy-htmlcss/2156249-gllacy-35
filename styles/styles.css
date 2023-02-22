@@ -263,7 +263,7 @@ body {
 /* Кнопки каталога */
 
 .catalog__filter__button {
-  align-self:flex-end;
+  align-self: flex-end;
   padding: 8px 53px;
   background-color: rgba(252, 252, 252, 0.3);
 }
@@ -407,7 +407,12 @@ body {
   padding: 0;
 }
 
+.header__navigation__list__leftside {
+  max-width: 422px;
+}
+
 .header__navigation__list__rightside {
+  max-width: 432px;
   column-gap: 17px;
   align-items: center;
   margin: 0;
@@ -1107,7 +1112,7 @@ body {
 }
 
 .main__social__link:focus .main__social__icon__stroke {
-  stroke:  #2D3440;
+  stroke: #2D3440;
   stroke-opacity: 100%;
 }
 
@@ -1334,6 +1339,7 @@ body {
 .main__profile__item__icecream {
   position: relative;
 }
+
 .main__profile__item__icecream::before {
   content: url(../images/main__index/icecream-icon__main.svg);
   position: absolute;
@@ -1344,6 +1350,7 @@ body {
 .main__profile__item__moo {
   position: relative;
 }
+
 .main__profile__item__moo::before {
   content: url(../images/main__index/moo-icon__main.svg);
   position: absolute;
@@ -1354,6 +1361,7 @@ body {
 .main__profile__item__leaf {
   position: relative;
 }
+
 .main__profile__item__leaf::before {
   content: url(../images/main__index/leaf-icon__main.svg);
   position: absolute;
@@ -1364,6 +1372,7 @@ body {
 .main__profile__item__temp {
   position: relative;
 }
+
 .main__profile__item__temp::before {
   content: url(../images/main__index/thermometer-icon__main.svg);
   position: absolute;
@@ -1751,7 +1760,7 @@ body {
 }
 
 .footer__social__link:focus .footer__social__icon__stroke {
-  stroke:  #2D3440;
+  stroke: #2D3440;
   stroke-opacity: 100%;
 }
 
@@ -2076,7 +2085,7 @@ body {
   background-color: #FCFCFC;
 }
 
-.toggle__min:hover .range__toggle__spot{
+.toggle__min:hover .range__toggle__spot {
   background-color: #2D3440;
 }
 
@@ -2084,7 +2093,7 @@ body {
   background-color: #FCFCFC;
 }
 
-.toggle__max:hover .range__toggle__spot{
+.toggle__max:hover .range__toggle__spot {
   background-color: #2D3440;
 }
 
@@ -2092,7 +2101,7 @@ body {
   background-color: #2D3440;
 }
 
-.toggle__min:active .range__toggle__spot{
+.toggle__min:active .range__toggle__spot {
   background-color: #2D3440;
 }
 
@@ -2100,7 +2109,7 @@ body {
   background-color: #2D3440;
 }
 
-.toggle__max:active .range__toggle__spot{
+.toggle__max:active .range__toggle__spot {
   background-color: #2D3440;
 }
 
@@ -2109,7 +2118,7 @@ body {
   background-color: #FCFCFC;
 }
 
-.toggle__min:focus .range__toggle__spot{
+.toggle__min:focus .range__toggle__spot {
   position: relative;
   left: -2px;
   background-color: #2D3440;
@@ -2120,7 +2129,7 @@ body {
   background-color: #FCFCFC;
 }
 
-.toggle__max:focus .range__toggle__spot{
+.toggle__max:focus .range__toggle__spot {
   position: relative;
   left: -2px;
   background-color: #2D3440;
@@ -2428,7 +2437,8 @@ body {
   padding-top: 1px;
   padding-left: 7px;
   box-sizing: border-box;
-  background-color: rgba(252, 252, 252, 0.3);;
+  background-color: rgba(252, 252, 252, 0.3);
+  ;
   border-radius: 50px;
 }
 
