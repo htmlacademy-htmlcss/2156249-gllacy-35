@@ -1393,7 +1393,9 @@ body {
 
 .main__blog__subscription__wrapper {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 30px;
+  row-gap: 30px;
   margin-bottom: 80px;
 }
 
@@ -1466,8 +1468,9 @@ body {
 
 .main__delivery {
   display: flex;
+  /* flex-wrap: wrap; */
   column-gap: 135px;
-  /* height: 534px; */
+  row-gap: 30px;
   padding: 64px 64px 64px 100px;
   margin-bottom: 80px;
   border-radius: 16px;
