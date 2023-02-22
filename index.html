@@ -5,53 +5,145 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
-  <body>
+  <body class="body__pink">
     <header class="header">
-      <a class="logo__link" href="index.html">
-        <img class="logo" src="images/header/logo__header.svg" width="137px" height="56px"
+      <a class="header__logo__link" href="index.html">
+        <img class="header__logo" src="images/header/logo__header.svg" width="137px" height="56px"
           alt="Логотип магазина Глейси.">
       </a>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link__catalog" href="#">
+      <nav class="header__navigation">
+        <ul class="header__navigation__list">
+          <li class="header__navigation__item header__navigation__item__catalog">
+            <a class="header__navigation__link header__navigation__link__catalog" href="catalog.html">
               Каталог
             </a>
+            <div class="popup popup__menu">
+              <ul class="popup__menu__list">
+                <li class="popup__menu__item popup__menu__item__new">
+                  <a class="popup__menu__link popup__menu__link__new" href="#">
+                    Новинки
+                  </a>
+                </li>
+                <li class="popup__menu__item">
+                  <a class="popup__menu__link" href="#">
+                    Сливочное
+                  </a>
+                </li>
+                <li class="popup__menu__item">
+                  <a class="popup__menu__link" href="#">
+                    Щербеты
+                  </a>
+                </li>
+                <li class="popup__menu__item">
+                  <a class="popup__menu__link" href="#">
+                    Фруктовый лед
+                  </a>
+                </li>
+                <li class="popup__menu__item">
+                  <a class="popup__menu__link" href="#">
+                    Мелорин
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
+          <li class="header__navigation__item">
+            <a class="header__navigation__link" href="#">
               Доставка и оплата
             </a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
+          <li class="header__navigation__item">
+            <a class="header__navigation__link" href="#">
               О компании
             </a>
           </li>
         </ul>
-        <ul class="navigation__list navigation__list__rightside">
-          <li class="navigation__item">
-            <a class="navigation__link phone__link" href="tel:+78005558628">
-              Тел.:+7 800 555-86-28
+        <ul class="header__navigation__list header__navigation__list__rightside">
+          <li class="header__navigation__item">
+            <a class="phone__link" href="tel:+78005558628">
+              +7 800 555-86-28
             </a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link__rightside" href="#">
+          <li class="header__navigation__item">
+            <a class="header__navigation__link header__navigation__link__rightside search__link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
+            <div class="popup popup__search">
+              <input class="main__form__input popup__search__input" type="search" placeholder="Поиск по сайту">
+            </div>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link__rightside" href="#">
+          <li class="header__navigation__item">
+            <a class="header__navigation__link header__navigation__link__rightside login__link" href="#">
               Вход
             </a>
+            <div class="popup popup__login">
+              <h2 class="popup__login__title">Корзина</h2>
+              <form class="popup__login__form" action="https://echo.htmlacademy.ru/" method="get">
+                <input class="main__form__input popup__login__form__input popup__login__form__input__email"
+                  placeholder="email@example.com" type="e-mail">
+                <input class="main__form__input popup__login__form__input popup__login__form__input__password"
+                  placeholder="Пароль" type="password">
+                <div class="popup__login__form__button__wrapper">
+                  <button class="button button__pink popup__login__form__button" type="submit">
+                    Отправить
+                  </button>
+                  <div class="popup__login__form__link__wrapper">
+                    <a class="popup__login__form__link" href="#">Забыли пароль?</a>
+                    <a class="popup__login__form__link" href="#">Регистрация</a>
+                  </div>
+                </div>
+              </form>
+            </div>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link__rightside" href="#">
+          <li class="header__navigation__item">
+            <a class="header__navigation__link header__navigation__link__rightside basket__link header__navigation__link__current basket__link__current"
+              href="#">
               <span class="visually-hidden">Корзина</span>
               2 товара
             </a>
+            <div class="popup popup__basket">
+              <h2 class="popup__basket__title">Корзина</h2>
+              <ul class="popup__basket__list">
+                <li class="popup__basket__item">
+                  <img class="popup__basket__image" src="images/main__index/ice-raspberry__main.png" width="46px"
+                    height="46px" alt="">
+                  <div class="popup__basket__title__minor__wrapper">
+                    <h3 class="popup__basket__title__minor">Малинка</h3>
+                    <span class="popup__basket__price__weight">1 кг х 310 ₽</span>
+                  </div>
+                  <span class="popup__basket__price">310 ₽</span>
+                  <button class="popup__basket__button__close">
+                    <span class="visually-hidden"></span>
+                  </button>
+                </li>
+                <li class="popup__basket__item">
+                  <img class="popup__basket__image" src="images/main__index/ice-bubblegum__main.png" width="46px"
+                    height="46px" alt="">
+                  <div class="popup__basket__title__minor__wrapper">
+                    <h3 class="popup__basket__title__minor">Бабл-гам</h3>
+                    <span class="popup__basket__price__weight">1,5 кг х 320 ₽</span>
+                  </div>
+                  <span class="popup__basket__price">480 ₽</span>
+                  <button class="popup__basket__button__close">
+                    <span class="visually-hidden"></span>
+                  </button>
+                </li>
+              </ul>
+              <div class="popup__basket__price__final__wrapper">
+                <button class="button button__pink popup__basket__button" type="submit">
+                  Оформить заказ
+                </button>
+                <span class="popup__basket__price__final">Итого: 790 ₽</span>
+              </div>
+            </div>
+            <div class="popup popup__basket__empty">
+              <h2 class="popup__basket__empty__title">
+                Ваша корзина пока пуста
+              </h2>
+            </div>
           </li>
         </ul>
       </nav>
@@ -63,39 +155,66 @@
       <section class="main__slider">
         <h2 class="visually-hidden">Галерея товаров в виде слайдера</h2>
         <div class="main__slider__information__wrapper">
-          <h3 class="main__slider__title">
-            Нежный пломбир <br>
-            с клубничным джемом
-          </h3>
-          <p class="main__slider__text">Натуральное мороженое из свежих сливок
-            и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
-          </p>
-          <button class="button main__slider__button" type="button">Заказать</button>
-          <ul class="main__slider__pagination__list">
-            <li class="main__slider__pagination__item">
-              <button class="button main__slider__pagination__button main__slider__pagination__button__current"
-                type="button">
-                <span class="visually-hidden">1 фото</span>
-              </button>
+          <ul class="main__slider__information__list">
+            <li class="main__slider__information__item">
+              <h3 class="main__slider__title">
+                Нежный пломбир <br>
+                с клубничным джемом
+              </h3>
+              <p class="main__slider__text">
+                Натуральное мороженое из свежих сливок <br>
+                и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
+              </p>
             </li>
-            <li class="main__slider__pagination__item">
-              <button class="button main__slider__pagination__button" type="button">
-                <span class="visually-hidden">2 фото</span>
-              </button>
+            <li class="main__slider__information__item visually-hidden">
+              <h3 class="main__slider__title">
+                Сливочное мороженое <br> со вкусом банана
+              </h3>
+              <p class="main__slider__text">
+                Сливочное мороженое с ярким банановым
+                вкусом подарит вам свежесть и наслаждение
+                даже в самый жаркий летний день.
+              </p>
             </li>
-            <li class="main__slider__pagination__item">
-              <button class="button main__slider__pagination__button" type="button">
-                <span class="visually-hidden">3 фото</span>
-              </button>
+            <li class="main__slider__information__item visually-hidden">
+              <h3 class="main__slider__title">
+                Карамельный пломбир <br>
+                с маршмеллоу
+              </h3>
+              <p class="main__slider__text">
+                Необычный сладкий десерт с карамельным
+                топпингом и кусочками зефира завоюет
+                сердца сладкоежек всех возрастов.
+              </p>
             </li>
           </ul>
+          <button class="button main__slider__button button__loading" type="button">
+            Заказать
+          </button>
         </div>
+        <ul class="main__slider__pagination__list">
+          <li class="main__slider__pagination__item">
+            <button class="main__slider__pagination__button main__slider__pagination__button__current" type="button">
+              <span class="visually-hidden">1 фото</span>
+            </button>
+          </li>
+          <li class="main__slider__pagination__item">
+            <button class="main__slider__pagination__button" type="button">
+              <span class="visually-hidden">2 фото</span>
+            </button>
+          </li>
+          <li class="main__slider__pagination__item">
+            <button class="main__slider__pagination__button" type="button">
+              <span class="visually-hidden">3 фото</span>
+            </button>
+          </li>
+        </ul>
         <div class="main__slider__pictures__wrapper">
           <ul class="main__slideshow__list">
             <li class="main__slideshow__item main__slideshow__item__big">
               <img class="main__slideshow__image" src="images/main__index/icecream-big__main.png" width="306px"
                 height="507px" alt="Кубничный пломбир в вафельном стаканчике, политый клубничным джемом.">
-              <button class="button main__slideshow__button main__slideshow__button__prev" type="button">
+              <button class="main__slideshow__button main__slideshow__button__prev" type="button">
                 <svg class="main__slideshow__icon__prev" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="7" height="12" fill="none">
                   <path class="main__slideshow__path__prev" fill="#FCFCFC" fill-rule="evenodd"
@@ -104,7 +223,7 @@
                 </svg>
                 <span class="visually-hidden">Предыдущее фото</span>
               </button>
-              <button class="button main__slideshow__button main__slideshow__button__next" type="button">
+              <button class="main__slideshow__button main__slideshow__button__next" type="button">
                 <svg class="main__slideshow__icon__next" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="7" height="12" fill="none">
                   <path class="main__slideshow__path__next" fill="#FCFCFC" fill-rule="evenodd"
@@ -188,7 +307,7 @@
               мороженого добавим в ваш заказ банку
               малинового варенья бесплатно.
             </p>
-            <button class="button main__banners__button" type="button">
+            <button class="button" type="button">
               Хочу подарок
             </button>
           </li>
@@ -197,11 +316,11 @@
               Маршмеллоу даром!
             </h3>
             <p class="main__banners__text">
-              При покупке 2 кг пломбира добавим
-              в ваш заказ упаковку нежных
+              При покупке 2 кг пломбира добавим <br>
+              в ваш заказ упаковку нежных <br>
               зефирок совершенно бесплатно.
             </p>
-            <button class="button main__banners__button" type="button">
+            <button class="button button__loading" type="button">
               Хочу подарок
             </button>
           </li>
@@ -223,7 +342,7 @@
             </p>
             <div class="main__categories__price__wrapper">
               <span class="main__categories__price">310 ₽/кг</span>
-              <button class="button main__categories__button" type="button">
+              <button class="main__categories__button" type="button">
                 <svg class="main__categories__button__icon" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
                   <path class="main__categories__button__path" fill="#FCFCFC" fill-rule="evenodd"
@@ -243,7 +362,7 @@
             </p>
             <div class="main__categories__price__wrapper">
               <span class="main__categories__price">340 ₽/кг</span>
-              <button class="button main__categories__button" type="button">
+              <button class="main__categories__button" type="button">
                 <svg class="main__categories__button__icon" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
                   <path class="main__categories__button__path" fill="#FCFCFC" fill-rule="evenodd"
@@ -259,11 +378,11 @@
               height="168px" alt="Образец мороженного крем-брюле с черничным джемом в виде круга.">
             <h3 class="main__categories__title">Черника</h3>
             <p class="main__categories__text">
-              Крем-брюле с черничным джемом
+              Крем-брюле <br> с черничным джемом
             </p>
             <div class="main__categories__price__wrapper">
               <span class="main__categories__price">330 ₽/кг</span>
-              <button class="button main__categories__button" type="button">
+              <button class="main__categories__button" type="button">
                 <svg class="main__categories__button__icon" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
                   <path class="main__categories__button__path" fill="#FCFCFC" fill-rule="evenodd"
@@ -279,11 +398,11 @@
               height="168px" alt="Образец мороженного бабл-гам в виде круга.">
             <h3 class="main__categories__title">Бабл-гам</h3>
             <p class="main__categories__text">
-              Ванильный пломбир со сладкой посыпкой
+              Ванильный пломбир <br> со сладкой посыпкой
             </p>
             <div class="main__categories__price__wrapper">
               <span class="main__categories__price">320 ₽/кг</span>
-              <button class="button main__categories__button" type="button">
+              <button class="main__categories__button" type="button">
                 <svg class="main__categories__button__icon" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
                   <path class="main__categories__button__path" fill="#FCFCFC" fill-rule="evenodd"
@@ -314,15 +433,15 @@
             </li>
             <li class="main__profile__item main__profile__item__moo">
               <p class="main__profile__text__minor">
-                Закупка ингредиентов производится только
-                у проверенных фермерских хозяйств, с которыми
+                Закупка ингредиентов производится только <br>
+                у проверенных фермерских хозяйств, с которыми <br>
                 нас связывает долговременное сотрудничество.
               </p>
             </li>
             <li class="main__profile__item main__profile__item__leaf">
               <p class="main__profile__text__minor">
                 Для приготовления мороженого используются сливки
-                и молоко высочайшего качества. Все ингредиенты
+                и молоко высочайшего качества. Все ингредиенты <br>
                 и добавки произведены из натурального сырья.
               </p>
             </li>
@@ -351,12 +470,13 @@
           <h2 class="visually-hidden">Форма подписки на рассылку от магазина Глейси</h2>
           <div class="main__subscription__wrapper">
             <p class="main__subscription__text">
-              Подпишитесь на нашу сладкую рассылку и будьте всегда
+              Подпишитесь на нашу сладкую рассылку и будьте всегда <br>
               в курсе всего самого вкусного, что у нас происходит. Обещаем
               не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
             <form class="main__subscription__form" action="https://echo.htmlacademy.ru/" method="get">
-              <input class="main__subscription__form__input" placeholder="email@example.com" type="email" required>
+              <input class="main__form__input main__subscription__form__input" placeholder="email@example.com"
+                type="email" required>
               <button class="button button__pink main__subscription__form__button" type="submit">
                 Отправить
               </button>
@@ -385,21 +505,52 @@
           </p>
           <form class="main__delivery__form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="field__group main__delivery__form__date">
-              <label class="main__delivery__form__label" for="date__field">Дата</label>
-              <input class="main__delivery__form__input input__date" id="date__field" type="date" name="date"
-                placeholder="01.04.2020">
+              <span class="main__delivery__form__label">
+                <label class="main__delivery__form__label" for="date__field">Дата</label>
+                <span class="main__tooltip">
+                  <button class="main__tooltip__button" aria-labelledby="tooltip__label__address" type="button">
+                    <svg class="main__tooltip__icon" aria-hidden="true" focusable="false"
+                      xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
+                      <path fill="#2D3440" fill-rule="evenodd"
+                        d="M7 2.13a4.88 4.88 0 1 0 0 9.75 4.88 4.88 0 0 0 0-9.75ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.33c.37 0 .67.3.67.67v2.22a.67.67 0 0 1-1.34 0V7c0-.37.3-.67.67-.67Zm0-2.21a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <span class="main__tooltip__text main__tooltip__text__date" role="tooltip"
+                    id="tooltip__label__address">
+                    Введите удобную дату доставки
+                  </span>
+                </span>
+              </span>
+              <input class="main__form__input main__delivery__form__input input__date" id="date__field" type="text"
+                name="date" placeholder="01.04.2020">
             </div>
             <div class="field__group main__delivery__form__phone">
               <label class="main__delivery__form__label" for="phone__field">Телефон</label>
-              <input class="main__delivery__form__input input__phone" id="phone__field" type="tel" name="phone"
-                placeholder="+7 800 999-00-00">
+              <input class="main__form__input main__delivery__form__input input__phone" id="phone__field" type="tel"
+                name="phone" placeholder="+7 800 999-00-00">
             </div>
             <div class="field__group main__delivery__form__address">
-              <label class="main__delivery__form__label" for="address__field">Адрес</label>
-              <input class="main__delivery__form__input input__address" id="address__field" type="text" name="address"
-                placeholder="ул. Большая Конюшенная, 19/8">
+              <span class="main__delivery__form__label">
+                <label class="main__delivery__form__label" for="address__field">Адрес</label>
+                <span class="main__tooltip">
+                  <button class="main__tooltip__button" aria-labelledby="tooltip__label__address" type="button">
+                    <svg class="main__tooltip__icon" aria-hidden="true" focusable="false"
+                      xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
+                      <path fill="#2D3440" fill-rule="evenodd"
+                        d="M7 2.13a4.88 4.88 0 1 0 0 9.75 4.88 4.88 0 0 0 0-9.75ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.33c.37 0 .67.3.67.67v2.22a.67.67 0 0 1-1.34 0V7c0-.37.3-.67.67-.67Zm0-2.21a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <span class="main__tooltip__text" role="tooltip" id="tooltip__label__address">
+                    Введите название <br> улицы, дома и квартиры
+                  </span>
+                </span>
+              </span>
+              <input class="main__form__input main__delivery__form__input input__address" id="address__field"
+                type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8">
             </div>
-            <button class="button button__pink main__delivery__form__button" type="submit">
+            <button class="button button__pink main__delivery__form__button button__pink__loading" type="submit">
               Отправить
             </button>
           </form>
@@ -520,5 +671,26 @@
       </section>
     </footer>
   </body>
+
+  <div class="modal__container">
+    <div class="modal__request">
+      <button class="modal__button__close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal__content">
+        <h2 class="modal__title">Мы обязательно ответим вам!</h2>
+        <form class="modal__content__form" action="https://echo.htmlacademy.ru/" method="get">
+          <input class="main__form__input modal__content__form__input" placeholder="Имя и фамилия" type="text">
+          <input class="main__form__input modal__content__form__input" placeholder="email@example.com" type="e-mail">
+          <textarea class="main__form__input modal__content__form__input modal__content__form__input__text"
+            placeholder="В свободной форме">
+          </textarea>
+          <button class="button button__pink modal__content__form__button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </section>
+    </div>
+  </div>
 
 </html>
