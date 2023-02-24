@@ -305,7 +305,7 @@ body {
 }
 
 .catalog__pagination__button {
-  width: 179px;
+  width: 181px;
 }
 
 .catalog__pagination__button::after {
@@ -2257,6 +2257,8 @@ body {
   position: absolute;
   top: -51px;
   left: 51px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .catalog__results__title {
