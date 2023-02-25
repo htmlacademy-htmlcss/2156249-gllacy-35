@@ -84,6 +84,7 @@ body {
   border-radius: 26px;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   position: relative;
+  cursor: pointer;
 }
 
 .button::after {
@@ -216,6 +217,7 @@ body {
   border: none;
   border-radius: 50%;
   background-color: rgba(252, 252, 252, 0.3);
+  cursor: pointer;
 }
 
 .main__slider__pagination__button:hover {
@@ -244,6 +246,7 @@ body {
   border-radius: 50%;
   outline: none;
   background-color: rgba(252, 252, 252, 0.3);
+  cursor: pointer;
 }
 
 .main__categories__button,
@@ -256,6 +259,7 @@ body {
   border-radius: 50%;
   background-color: #FF2F64;
   position: relative;
+  cursor: pointer;
 }
 
 /* Кнопки каталога */
@@ -409,8 +413,8 @@ body {
 }
 
 .phone__link:focus {
-  border-radius: 30px;
-  outline: 2px solid #2D3440;
+  outline: none;
+  text-decoration: 2px underline #2D3440;
 }
 
 .header__navigation__list__leftside {
@@ -538,7 +542,7 @@ body {
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 4px;
   position: absolute;
-  top: 34px;
+  top: 40px;
   right: 0;
   z-index: 1;
 }
@@ -583,6 +587,10 @@ body {
 .popup__basket__item {
   display: flex;
   align-items: center;
+}
+
+.popup__basket__image {
+  border-radius: 50%;
 }
 
 .popup__basket__title__minor__wrapper {
@@ -635,11 +643,11 @@ body {
 }
 
 .popup__basket__button {
-  width: 198px;
+  max-width: 200px;
 }
 
 .popup__basket__button::after {
-  width: 198px;
+  width: 100%;
 }
 
 .popup__basket__price__final {
@@ -705,11 +713,11 @@ body {
 }
 
 .popup__login__form__button {
-  width: 113px;
+  max-width: 113px;
 }
 
 .popup__login__form__button::after {
-  width: 113px;
+  width: 100%;
 }
 
 .popup__login__form__link__wrapper {
@@ -780,6 +788,7 @@ body {
   padding-bottom: 6px;
   padding-left: 16px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .popup__menu__link__new {
@@ -817,6 +826,9 @@ body {
   background-color: #ffffff;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .main__form__input::placeholder {
@@ -825,8 +837,6 @@ body {
   line-height: 20px;
   color: #B9B9B9;
 }
-
-
 
 .main__form__input:hover {
   border: 1px solid #2D3440;
@@ -852,6 +862,16 @@ body {
 .main__form__input:invalid:hover {
   border: 2px solid #EA5454;
   padding-left: 15px;
+}
+
+.main__form__input:placeholder-shown {
+  border: 1px solid #B9B9B9;
+}
+
+.main__form__input:placeholder-shown:hover {
+  border: 1px solid #2D3440;
+  padding-left: 16px;
+  outline: 0;
 }
 
 /* Основная часть главной страницы*/
@@ -1045,6 +1065,7 @@ body {
   padding: 0 17px;
   opacity: 40%;
   position: relative;
+  cursor: pointer;
 }
 
 .main__slideshow__item__small::before {
@@ -1862,7 +1883,7 @@ body {
   height: 20px;
   background-color: #FCFCFC;
   border: none;
-  background-image: url("../images/modal/close-icon__modal.svg");
+  background-image: url(../images/modal__popup/close-icon__modal.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -2019,20 +2040,29 @@ body {
 }
 
 .catalog__filter__group__title {
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   padding: 0 0 0 16px;
+  margin: 0;
   margin-bottom: 8px;
 }
 
 .select-control {
-  width: 196px;
-  height: 36px;
+  min-width: 196px;
+  padding: 8px 16px;
   border: none;
   background-color: rgba(252, 252, 252, 0.3);
+  background-image: url(../images/header/arrow-icon__header.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
   border-radius: 20px;
-  padding-left: 16px;
+  -webkit-appearance: none;
   appearance: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  cursor: pointer;
 }
 
 .select-control:hover {
@@ -2073,6 +2103,7 @@ body {
   border-radius: 50%;
   background-color: #2D3440;
   opacity: 100%;
+  cursor: pointer;
 }
 
 .toggle__min {
@@ -2167,6 +2198,7 @@ body {
   display: block;
   padding-left: 24px;
   position: relative;
+  cursor: pointer;
 }
 
 .control__input[type="radio"] + .control__mark {

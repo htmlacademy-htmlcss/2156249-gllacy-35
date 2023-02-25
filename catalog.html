@@ -73,7 +73,8 @@
               <span class="visually-hidden">Поиск</span>
             </a>
             <div class="popup popup__search">
-              <input class="main__form__input popup__search__input" type="search" placeholder="Поиск по сайту">
+              <input class="main__form__input popup__search__input" type="search" id="search__popup__field"
+                name="search" placeholder="Поиск по сайту">
             </div>
           </li>
           <li class="header__navigation__item">
@@ -81,15 +82,15 @@
               Вход
             </a>
             <div class="popup popup__login">
-              <h2 class="popup__login__title">Корзина</h2>
+              <h2 class="popup__login__title">Личный кабинет</h2>
               <form class="popup__login__form" action="https://echo.htmlacademy.ru/" method="get">
                 <input class="main__form__input popup__login__form__input popup__login__form__input__email"
-                  placeholder="email@example.com" type="e-mail">
+                  placeholder="email@example.com" id="e-mail__popup__field" name="e-mail" type="email">
                 <input class="main__form__input popup__login__form__input popup__login__form__input__password"
-                  placeholder="Пароль" type="password">
+                  placeholder="Пароль" id="password__popup__field" name="password" type="password">
                 <div class="popup__login__form__button__wrapper">
                   <button class="button button__pink popup__login__form__button" type="submit">
-                    Отправить
+                    Войти
                   </button>
                   <div class="popup__login__form__link__wrapper">
                     <a class="popup__login__form__link" href="#">Забыли пароль?</a>
@@ -109,7 +110,7 @@
               <h2 class="popup__basket__title">Корзина</h2>
               <ul class="popup__basket__list">
                 <li class="popup__basket__item">
-                  <img class="popup__basket__image" src="images/main__index/ice-raspberry__main.png" width="46"
+                  <img class="popup__basket__image" src="images/main__index/ice-raspberry__main.jpg" width="46"
                     height="46" alt="">
                   <div class="popup__basket__title__minor__wrapper">
                     <h3 class="popup__basket__title__minor">Малинка</h3>
@@ -121,7 +122,7 @@
                   </button>
                 </li>
                 <li class="popup__basket__item">
-                  <img class="popup__basket__image" src="images/main__index/ice-bubblegum__main.png" width="46"
+                  <img class="popup__basket__image" src="images/main__index/ice-bubblegum__main.jpg" width="46"
                     height="46" alt="">
                   <div class="popup__basket__title__minor__wrapper">
                     <h3 class="popup__basket__title__minor">Бабл-гам</h3>
@@ -179,40 +180,40 @@
         <form class="catalog__filter__form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="catalog__filter__group__wrapper wrapper__upper">
             <div class="catalog__filter__group">
-              <legend class="catalog__filter__group__title">Сортировка:</legend>
-              <select class="select-control" aria-label="Сортировка">
+              <p class="catalog__filter__group__title">Сортировка:</p>
+              <select class="select-control" aria-label="Сортировка" name="sort">
                 <option class="select-control__option" value="popular">по популярности</option>
                 <option class="select-control__option" value="price">по цене</option>
                 <option class="select-control__option" value="new">новинки</option>
               </select>
             </div>
             <div class="catalog__filter__group">
-              <legend class="catalog__filter__group__title">Цена: 100 ₽ – 500 ₽</legend>
+              <p class="catalog__filter__group__title">Цена: 100 ₽ – 500 ₽</p>
               <div class="range">
                 <div class="range__bar"></div>
                 <button class="range__toggle toggle__min">
-                  <div class="range__toggle__spot"></div>
+                  <span class="range__toggle__spot"></span>
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </button>
                 <button class="range__toggle toggle__max">
-                  <div class="range__toggle__spot"></div>
+                  <span class="range__toggle__spot"></span>
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </button>
               </div>
             </div>
             <div class="catalog__filter__group">
-              <legend class="catalog__filter__group__title">Жирность:</legend>
+              <p class="catalog__filter__group__title">Жирность:</p>
               <ul class="catalog__filter__list">
                 <li class="catalog__filter__item">
                   <label class="control">
-                    <input class="visually-hidden control__input" type="radio" name="fat content" value="0%">
+                    <input class="visually-hidden control__input" type="radio" name="fat__content" value="0%">
                     <span class="control__mark"></span>
                     <span class="control__label">0%</span>
                   </label>
                 </li>
                 <li class="catalog__filter__item">
                   <label class="control">
-                    <input class="visually-hidden control__input" type="radio" name="fat content" value="до 10%"
+                    <input class="visually-hidden control__input" type="radio" name="fat__content" value="до 10%"
                       checked>
                     <span class="control__mark"></span>
                     <span class="control__label">до 10%</span>
@@ -220,14 +221,14 @@
                 </li>
                 <li class="catalog__filter__item">
                   <label class="control">
-                    <input class="visually-hidden control__input" type="radio" name="fat content" value="до 30%">
+                    <input class="visually-hidden control__input" type="radio" name="fat__content" value="до 30%">
                     <span class="control__mark"></span>
                     <span class="control__label">до 30%</span>
                   </label>
                 </li>
                 <li class="catalog__filter__item">
                   <label class="control">
-                    <input class="visually-hidden control__input" type="radio" name="fat content" value="выше 30%">
+                    <input class="visually-hidden control__input" type="radio" name="fat__content" value="выше 30%">
                     <span class="control__mark"></span>
                     <span class="control__label">выше 30%</span>
                   </label>
@@ -237,7 +238,7 @@
           </div>
           <div class="catalog__filter__group__wrapper wrapper__lower">
             <div class="catalog__filter__group">
-              <legend class="catalog__filter__group__title">Наполнители:</legend>
+              <p class="catalog__filter__group__title">Наполнители:</p>
               <ul class="catalog__filter__list catalog__filter__list__fillers">
                 <li class="catalog__filter__item">
                   <label class="control">
@@ -248,7 +249,7 @@
                 </li>
                 <li class="catalog__filter__item">
                   <label class="control">
-                    <input class="visually-hidden control__input" type="checkbox" name="sugar topping" checked>
+                    <input class="visually-hidden control__input" type="checkbox" name="sugar__topping" checked>
                     <span class="control__mark"></span>
                     <span class="control__label">сахарные посыпки</span>
                   </label>

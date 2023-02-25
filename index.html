@@ -72,7 +72,8 @@
               <span class="visually-hidden">Поиск</span>
             </a>
             <div class="popup popup__search">
-              <input class="main__form__input popup__search__input" type="search" placeholder="Поиск по сайту">
+              <input class="main__form__input popup__search__input" type="search" id="search__popup__field"
+                name="search" placeholder="Поиск по сайту" required>
             </div>
           </li>
           <li class="header__navigation__item">
@@ -80,15 +81,15 @@
               Вход
             </a>
             <div class="popup popup__login">
-              <h2 class="popup__login__title">Корзина</h2>
+              <h2 class="popup__login__title">Личный кабинет</h2>
               <form class="popup__login__form" action="https://echo.htmlacademy.ru/" method="get">
                 <input class="main__form__input popup__login__form__input popup__login__form__input__email"
-                  placeholder="email@example.com" type="e-mail">
+                  placeholder="email@example.com" id="e-mail__popup__field" name="e-mail" type="email" required>
                 <input class="main__form__input popup__login__form__input popup__login__form__input__password"
-                  placeholder="Пароль" type="password">
+                  placeholder="Пароль" id="password__popup__field" name="password" type="password" required>
                 <div class="popup__login__form__button__wrapper">
                   <button class="button button__pink popup__login__form__button" type="submit">
-                    Отправить
+                    Войти
                   </button>
                   <div class="popup__login__form__link__wrapper">
                     <a class="popup__login__form__link" href="#">Забыли пароль?</a>
@@ -108,7 +109,7 @@
               <h2 class="popup__basket__title">Корзина</h2>
               <ul class="popup__basket__list">
                 <li class="popup__basket__item">
-                  <img class="popup__basket__image" src="images/main__index/ice-raspberry__main.png" width="46"
+                  <img class="popup__basket__image" src="images/main__index/ice-raspberry__main.jpg" width="46"
                     height="46" alt="">
                   <div class="popup__basket__title__minor__wrapper">
                     <h3 class="popup__basket__title__minor">Малинка</h3>
@@ -120,7 +121,7 @@
                   </button>
                 </li>
                 <li class="popup__basket__item">
-                  <img class="popup__basket__image" src="images/main__index/ice-bubblegum__main.png" width="46"
+                  <img class="popup__basket__image" src="images/main__index/ice-bubblegum__main.jpg" width="46"
                     height="46" alt="">
                   <div class="popup__basket__title__minor__wrapper">
                     <h3 class="popup__basket__title__minor">Бабл-гам</h3>
@@ -475,8 +476,8 @@
               не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
             <form class="main__subscription__form" action="https://echo.htmlacademy.ru/" method="get">
-              <input class="main__form__input main__subscription__form__input" placeholder="email@example.com"
-                type="email" required>
+              <input class="main__form__input main__subscription__form__input" id="e-mail__subscription__field"
+                name="e-mail" placeholder="email@example.com" type="email" required>
               <button class="button button__pink main__subscription__form__button" type="submit">
                 Отправить
               </button>
@@ -506,7 +507,7 @@
           <form class="main__delivery__form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="field__group main__delivery__form__date">
               <span class="main__delivery__form__label">
-                <label class="main__delivery__form__label" for="date__field">Дата</label>
+                <label class="main__delivery__form__label" for="date__delivery__field">Дата</label>
                 <span class="main__tooltip">
                   <button class="main__tooltip__button" aria-labelledby="tooltip__label__address" type="button">
                     <svg class="main__tooltip__icon" aria-hidden="true" focusable="false"
@@ -516,23 +517,22 @@
                         clip-rule="evenodd" />
                     </svg>
                   </button>
-                  <span class="main__tooltip__text main__tooltip__text__date" role="tooltip"
-                    id="tooltip__label__address">
+                  <span class="main__tooltip__text main__tooltip__text__date" role="tooltip" id="tooltip__label__date">
                     Введите удобную дату доставки
                   </span>
                 </span>
               </span>
-              <input class="main__form__input main__delivery__form__input input__date" id="date__field" type="text"
-                name="date" placeholder="01.04.2020">
+              <input class="main__form__input main__delivery__form__input input__date" id="date__delivery__field"
+                type="text" name="date" placeholder="01.04.2020" required>
             </div>
             <div class="field__group main__delivery__form__phone">
-              <label class="main__delivery__form__label" for="phone__field">Телефон</label>
-              <input class="main__form__input main__delivery__form__input input__phone" id="phone__field" type="tel"
-                name="phone" placeholder="+7 800 999-00-00">
+              <label class="main__delivery__form__label" for="phone__delivery__field">Телефон</label>
+              <input class="main__form__input main__delivery__form__input input__phone" id="phone__delivery__field"
+                type="tel" name="phone" placeholder="+7 800 999-00-00" required>
             </div>
             <div class="field__group main__delivery__form__address">
               <span class="main__delivery__form__label">
-                <label class="main__delivery__form__label" for="address__field">Адрес</label>
+                <label class="main__delivery__form__label" for="address__delivery__field">Адрес</label>
                 <span class="main__tooltip">
                   <button class="main__tooltip__button" aria-labelledby="tooltip__label__address" type="button">
                     <svg class="main__tooltip__icon" aria-hidden="true" focusable="false"
@@ -547,8 +547,8 @@
                   </span>
                 </span>
               </span>
-              <input class="main__form__input main__delivery__form__input input__address" id="address__field"
-                type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8">
+              <input class="main__form__input main__delivery__form__input input__address" id="address__delivery__field"
+                type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8" required>
             </div>
             <button class="button button__pink main__delivery__form__button" type="submit">
               Отправить
@@ -559,9 +559,9 @@
 
       <section class="main__address">
         <div class="main__address__wrapper">
-          <p class="main__address__text__minor">
+          <h2 class="main__address__text__minor">
             Адрес главного офиса <br> и офлайн-магазина:
-          </p>
+          </h2>
           <address class="main__address__text">
             наб. реки Карповки, <br>
             5 лит П, Санкт-Петербург
@@ -680,10 +680,12 @@
       <section class="modal__content">
         <h2 class="modal__title">Мы обязательно ответим вам!</h2>
         <form class="modal__content__form" action="https://echo.htmlacademy.ru/" method="get">
-          <input class="main__form__input modal__content__form__input" placeholder="Имя и фамилия" type="text">
-          <input class="main__form__input modal__content__form__input" placeholder="email@example.com" type="e-mail">
-          <textarea class="main__form__input modal__content__form__input modal__content__form__input__text"
-            placeholder="В свободной форме">
+          <input class="main__form__input modal__content__form__input" placeholder="Имя и фамилия" name="name"
+            id="name__modal__field" type="text" required>
+          <input class="main__form__input modal__content__form__input" placeholder="email@example.com" name="e-mail"
+            id="e-mail__modal__field" type="email" required>
+          <textarea class="main__form__input modal__content__form__input modal__content__form__input__text" rows="6"
+            id="text__modal__field" name="text" placeholder="В свободной форме">
           </textarea>
           <button class="button button__pink modal__content__form__button" type="submit">
             Отправить
