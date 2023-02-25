@@ -490,7 +490,7 @@ body {
 }
 
 .login__link:focus::before {
-  left: 10px;
+  left: 13px;
 }
 
 .basket__link {
@@ -505,7 +505,7 @@ body {
 }
 
 .basket__link:focus::before {
-  left: 10px;
+  left: 13px;
 }
 
 .header__navigation__link__current {
@@ -846,7 +846,7 @@ body {
   border: 2px solid #2D3440;
   outline: 0;
   outline-offset: 0;
-  padding-left: 15px;
+  padding-left: 16px;
 }
 
 .main__form__input:disabled,
